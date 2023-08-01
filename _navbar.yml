@@ -6,7 +6,7 @@ left:
     menu:
       - text: "History"
         href: ./aboutme.html
-  - text: "Project"
+  - text: "Modules"
     menu:
        - text: "Introduction to Linux"
          href: ./Introduction_to_Linux.html
