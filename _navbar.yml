@@ -1,0 +1,19 @@
+name: "CVR"
+title: "VBG 2023"
+type: inverse
+left:
+  - text: "About VBG course"
+    menu:
+      - text: "History"
+        href: ./aboutme.html
+  - text: "Project"
+    menu:
+       - text: "Introduction to Linux"
+         href: ./Introduction_to_Linux.html
+       - text: "Project part 2"
+         href: ./project2.html
+  - text: "Contact"
+    href: ./contact.html
+right:
+  - icon: fa-github fa-lg
+    href: https://github.com/centre-for-virus-research

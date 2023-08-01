@@ -1,0 +1,69 @@
+---
+title: "Introduction to Linux"
+author: "Srikeerthana Kuchi"
+#date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+> **Color codes** \
+> <font color='blue'>Text in Blue – Refer “Info” section</font> \
+> <font color='magenta'>Text in Pink – Points to remember</font> \
+> <mark style="background-color: turquoise">Text background in Turquoise - commands </mark> \
+> <mark style="background-color: Grey">Text background in Grey – Command output </mark> \
+> <mark style="background-color: Red">Text background in Red – Alert/Warning </mark> \
+
+
+### Introduction
+
+<font color='blue'>Linux</font> is an open-source operating system <font color='blue'>OS</font> developed based on the kernel created by Linus Benedict Torvalds. In the last two decades, Linux has gained much popularity and now is being used on many platforms. Nowadays, most of the high-end servers to mobile phones (Android OS or iOS) run on different variants of Linux.
+
+Linux computers/servers are installed for multi-user usage. In this course, we will work on a virtual machine (<font color='blue'>VM</font>) running (<font color='blue'>Ubuntu</font>) desktop edition. Most of the commands specified in this manual can be used in any other distribution (i.e., CentOS, Debian, etc.) of Linux operating system. 
+
+#### Resource: How to install Linux?
+
+To install Ubuntu on personal computers, please follow the instructions in the following link.
+[Install Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0)
+
+##### The Terminal 
+
+We use terminal (AKA command line interface) to interact with the operating system. The terminal by default runs one of the “shells”. Shell is a program that sits between the user and the <font color='blue'>kernel</font> and translates user commands (text) into machine code. The advantages of using command line are greater control and flexibility over the system or software and multiple commands can be saved in a file and executed as a program.
+
+The most common shells are:
+ 
+Bourne Shell \
+Bourne Again Shell – BASH (variant is Z Shell) \
+C Shell (variant is T Shell) \
+K Shell \
+
+Among these Bourne Again Shell (BASH) is the most popular one. This is the default shell on the system, and we will be using it throughout this course. 
+
+##### Connecting to Linux Server
+
+In this course, we will be using MobaXterm application to access the OS of a server version of Ubuntu.
+
+> Open MobaXterm -> Sessions -> New session -> ssh -> add remote host and username -> OK -> Enter password
+
+
+
+
+
+
+
+##### <span style="text-decoration:underline">Info</span>
+<font color='blue'>
+
+|   Terminology | Description                                                                               |
+|---------------|-------------------------------------------------------------------------------------------|
+|   Linux       |Unix derivative, most popular variant of Unix                                              |
+|   OS          |Software that commands the hardware and make the computer work                             |
+|   VM          |A resource that can run an OS independent of the host OS (e.g., Ubuntu VM on a Mac OS)     |
+|   Ubuntu      |Free Linux distribution (distro) based on Debian (an oldest OS based on Linux kernel)      |
+|   Kernel      |Core interface between a computer’s hardware and its processes, manages available resources|
+
+</font>
+
+
