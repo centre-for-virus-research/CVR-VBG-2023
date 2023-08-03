@@ -10,8 +10,12 @@ left:
     menu:
        - text: "Introduction to Linux"
          href: ./Introduction_to_Linux.html
-       - text: "Project part 2"
-         href: ./project2.html
+       - text: "Metagenomics"
+         href: ./Metagenomics.html
+       - text: "Transcriptomics"
+         href: ./Transcriptomics.html
+       - text: "QualityAssessment"
+         href: ./QualityAssessment.html
   - text: "Contact"
     href: ./contact.html
 right:
