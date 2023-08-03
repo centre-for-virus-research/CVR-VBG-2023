@@ -1,9 +1,7 @@
-# RNA-Seq Workshop
-
-Dr Quan Gu & Dr Srikeerthana Kuchi \
-
-#### Contact: quan.gu@glasgow.ac.uk ####
-#### srikeerthana.kuchi@glasgow.ac.uk ####
+---
+title: "RNA-Seq Workshop"
+author: "Quan Gu"
+---
 
 The following details the steps introduce the classical RNA-Seq data processing pipeline:
 
@@ -160,5 +158,3 @@ One of the
 best-known tools is **David** (https://david.ncifcrf.gov). 
 We could also try **Reactome**
 (https://reactome.org), which is highly recommended.
-
-
