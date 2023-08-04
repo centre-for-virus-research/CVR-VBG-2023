@@ -30,6 +30,24 @@ body {text-align: justify}
 > <mark style="background-color: Grey">Text background in Grey – Command output </mark> \
 > <mark style="background-color: Red">Text background in Red – Alert/Warning </mark> \
 
+```
+Command line shortcuts 
+
+Up/Down arrows: Previous commands
+!!: Reruns previous command
+Tab: Auto complete
+Tab+Tab: All available options 
+Ctrl+a: Move cursor to start of line
+Ctrl+e: Move cursor to end of line
+Alt+: Alternates between terminals
+Ctrl+l: Clear screen (or Command+k on Mac) 
+Ctrl+c: Terminates the running program 
+Ctrl+z: Suspends the running program
+Ctrl+w: Removes a previous word
+Ctrl+d: Logout
+Ctrl+d(in a command): Removes a character 
+Ctrl+u: Removes till the beginning 
+```
 
 ## Introduction
 
@@ -60,6 +78,9 @@ Among these Bourne Again Shell (BASH) is the most popular one. This is the defau
 In this course, we will be using MobaXterm application to access the OS of a server version of Ubuntu. Please use the provided username and password to login into your account.
 
 > Open MobaXterm -> Sessions -> New session -> <font color='blue'>ssh</font> -> add remote host and username -> OK -> Enter password -> Don't save password
+
+
+>>> Talk about MobaXterm download here >>>
 
 #### Linux command structure 
 
@@ -456,7 +477,8 @@ cut -d, -f3 outbreak.csv | sort | uniq
 
 Other text processing commands worth looking at are: tr, rev, sed and paste.
 
-### I/O control in Linux
+## I/O control in Linux
+
 When you run a command, the output is usually sent to standard output (stdout) ie. the terminal. However, we can redirect the standard output to a file using ">".
 
 <div class = "blue">
@@ -474,8 +496,55 @@ ls /foo 2> error
 To redirect stdout and stderr to a file use "&>".
 
 
+### Pipes
+
+Piping in Linux is a very powerful and efficient way to combine commands. Pipes (|) in Linux act as connecting links between commands. Pipe redirects output of the first command as an input to the next command. We can nest as many commands as we want using pipes. They ensure smooth running of the command flow and reduces the execution time. 
+
+To print 10 smallest viruses,
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+sort -t"|" -nk6 human_viruses.txt | head -10
+```
+
+We will be working on other examples during the course, where we use pipes to combine more than two commands. 
+
+#### Process control \
+
+Some commands take time to finish the assigned job. For example, if you would like to compress a huge file with gzip command that takes a few minutes to finish running, you can run it in the background by appending the command with “&” (Another way is to suspend a command by pressing Ctrl+Z and typing “bg”). The completion of the task is indicated by “Done”.
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+gzip list &
+```
+
+We can get list of currently running jobs in the terminal by “jobs” command. This will give you all the background jobs running in the current terminal. If you want to see all the running processes in the system, use “top”. You can get user specific details in top using “-u” option. 
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+top
+```
 
 
+Few of the important columns in top output: \
+
+* PID: Process Id, this is a unique number used to identify the process \
+* COMMAND: Command Name \
+* S: Process Status: The status of the task which can be one of: \
+  + D = uninterruptible sleep \
+  + R = running \
+  + S = sleeping \
+  + T = traced or stopped \
+  + Z = zombie \
+
+If you want to stop a running background job use “kill” command followed by the process id. 
+
+kill 1234
+
+This command kills the job with the process id 1234. As a user you can kill only your jobs. You do not have permission to run this command on the process ids of other users.
+
+
+## Exercises
 
 
 
