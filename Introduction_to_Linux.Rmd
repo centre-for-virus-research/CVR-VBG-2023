@@ -60,7 +60,7 @@ Linux computers/servers are installed for multi-user usage. In this course, we w
 To install Ubuntu on personal computers, please follow the instructions in the following link.
 [Install Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0)
 
-#### The Terminal 
+### The Terminal 
 
 We use terminal (AKA command line interface) to interact with the operating system. The terminal by default runs one of the “shells”. Shell is a program that sits between the user and the <font color='blue'>kernel</font> and translates user commands (text) into machine code. The advantages of using command line are greater control and flexibility over the system or software and multiple commands can be saved in a file and executed as a program.
 
@@ -82,7 +82,7 @@ In this course, we will be using MobaXterm application to access the OS of a ser
 
 >>> Talk about MobaXterm download here >>>
 
-#### Linux command structure 
+### Linux command structure 
 
 When you open a terminal in Linux, (MobaXterm by default opens a terminal), you will see a command prompt, ready to take commands. The default location on the terminal is your “home directory”. It is represented with ~ (tilde) symbol.
 
@@ -115,7 +115,7 @@ Points to remember: \
 
 </font>
 
-#### First Commands
+### First Commands
 
 Directories are the Unix equivalent of folders on a <font color='blue'>PC</font> or a <font color='blue'>Mac</font>. They are organized in a hierarchy, so directories can have sub-directories and so on. Directories, like folders, are useful to keep your data files organized. The location or directory you are currently in, is called the current working directory. The location or “full pathname” of the file SARS-CoV-2.fa in the 'Linux' directory can be expressed as: 
 
@@ -323,7 +323,7 @@ At the bottom of the screen, there are commands with a symbol in front. The symb
 
 Ctrl+X will exit nano and return you to the command line. 
 
-
+```
 Nano quick reference
 
 Ctrl+X: Exit the editor. If you’ve edited text without saving, you’ll be prompted as to whether you really want to exit. 
@@ -345,7 +345,7 @@ Ctrl+W: Find a word or phrase. At the prompt, use the cursor keys to go through 
 Ctrl+C: Show current line number and file information. 
 
 Ctrl+G: Get help; this provides information on navigating through files and common keyboard commands 
-
+```
 
 ### Getting help in Linux 
 
@@ -375,7 +375,7 @@ Mandatory arguments to long options are mandatory for short options too.
 Please explore manual pages of all the above commands for available options. 
 
 
-## Linux text processing
+### Linux text processing
 
 *(a)* cut \
 The cut command is a command line utility to cut a section from a file. Please see "man cut" for available options.
@@ -477,7 +477,7 @@ cut -d, -f3 outbreak.csv | sort | uniq
 
 Other text processing commands worth looking at are: tr, rev, sed and paste.
 
-## I/O control in Linux
+### I/O control in Linux
 
 When you run a command, the output is usually sent to standard output (stdout) ie. the terminal. However, we can redirect the standard output to a file using ">".
 
@@ -496,7 +496,7 @@ ls /foo 2> error
 To redirect stdout and stderr to a file use "&>".
 
 
-### Pipes
+#### Pipes
 
 Piping in Linux is a very powerful and efficient way to combine commands. Pipes (|) in Linux act as connecting links between commands. Pipe redirects output of the first command as an input to the next command. We can nest as many commands as we want using pipes. They ensure smooth running of the command flow and reduces the execution time. 
 
@@ -509,7 +509,8 @@ sort -t"|" -nk6 human_viruses.txt | head -10
 
 We will be working on other examples during the course, where we use pipes to combine more than two commands. 
 
-#### Process control \
+
+### Process control \
 
 Some commands take time to finish the assigned job. For example, if you would like to compress a huge file with gzip command that takes a few minutes to finish running, you can run it in the background by appending the command with “&” (Another way is to suspend a command by pressing Ctrl+Z and typing “bg”). The completion of the task is indicated by “Done”.
 
@@ -545,8 +546,6 @@ This command kills the job with the process id 1234. As a user you can kill only
 
 
 ## Exercises
-
-
 
 
 
