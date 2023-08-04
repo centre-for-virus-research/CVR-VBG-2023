@@ -5,7 +5,7 @@ author: "Srikeerthana Kuchi"
 output:
   html_document:
     toc: true
-    toc_depth: 4
+    toc_depth: 3
     highlight: tango
 ---
 
@@ -16,12 +16,12 @@ knitr::opts_chunk$set(echo = TRUE)
 <style>
 div.blue pre { background-color:lightblue; }
 div.red pre { background-color:red; }
-
+body {text-align: justify}
 </style>
 
-<style type="text/css">
-body{font-size: 14pt;}
-</style>
+#<style type="text/css">
+#body{font-size: 13pt;}
+#</style>
 
 > **Color codes** \
 > <font color='blue'>Text in Blue – Refer “Info” section</font> \
@@ -125,7 +125,7 @@ Tab completion is a trick that normally reduces this risk significantly. Instead
 </font>
 
 
-## Important Linux Commands
+### Important Commands
 
 *(a)* ls \
 Lists information about the files/directories. Default is the current directory. Sorts entries alphabetically. \
@@ -259,6 +259,224 @@ ln -s temp/temp1 .
 ls -l 
 ```
 </div>
+
+### File viewers
+
+*(a)* cat \
+The concatenate command combines files (sequentially) and prints on the screen (standard output).
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+cat SARS-CoV-2.fa
+```
+</div>
+
+*(b)* more/less \
+These commands are used for viewing the content of the files; faster with large input files than text editors; not the entire file is read at the beginning.
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+more SARS-CoV-2.fa
+```
+</div>
+
+Press “Enter” to view lines further and “q” to quit the program
+
+
+*(c)* head/tail \
+These commands show first/last 10 lines (default) respectively from a file.
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+head SARS-CoV-2.fa
+```
+</div>
+
+### File editors
+
+There are many non-graphical text editors like ed, emacs, vi and nano available on most Linux distributions. Some of them are very sophisticated (e.g., vi) and for advanced users. 
+
+Nano (earlier called pico) is like any graphical editor without a mouse. All commands are executed using the keyboard, using the <CTRL> key modifier. It can be used to edit virtually any kind of text file from the command line. Nano without a filename gives you a standard (blank) nano window. 
+
+At the bottom of the screen, there are commands with a symbol in front. The symbol tells that you need to hold down the Control (Ctrl) key, and then press the corresponding letter of the command you wish to use. 
+
+Ctrl+X will exit nano and return you to the command line. 
+
+
+Nano quick reference
+
+Ctrl+X: Exit the editor. If you’ve edited text without saving, you’ll be prompted as to whether you really want to exit. 
+
+Ctrl+O: Write (output) the current contents of the text buffer to a file. A filename prompt will appear; press Ctrl+T to open the file navigator shown above. 
+
+Ctrl+R: Read a text file into the current editing session. At the filename prompt, hit Ctrl+T: for the file navigator. 
+
+Ctrl+K: Cut a line into the clipboard. You can press this repeatedly to copy multiple lines, which are then stored as one chunk. 
+
+Ctrl+J: Justify (fill out) a paragraph of text. By default, this reflows text to match the width of the editing window. 
+
+Ctrl+U: Uncut text, or rather, paste it from the clipboard. Note that after a Justify operation, this turns into unjustify. 
+
+Ctrl+T: Check spelling. 
+
+Ctrl+W: Find a word or phrase. At the prompt, use the cursor keys to go through previous search terms, or hit Ctrl+R to move into replace mode. Alternatively, you can hit Ctrl+T to go to a specific line.
+
+Ctrl+C: Show current line number and file information. 
+
+Ctrl+G: Get help; this provides information on navigating through files and common keyboard commands 
+
+
+### Getting help in Linux 
+
+All Linux commands have manual pages. To access them, use “man” or “info” command. The manual page gives a detailed explanation of the command, all available options and sometimes, also provides examples. For example, to view the manual page for “ls” command:
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+man ls
+```
+</div>
+
+List information about the FILEs (the current directory by default).  Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+```
+Mandatory arguments to long options are mandatory for short options too.
+
+-a, --all
+    do not ignore entries starting with .
+
+-A, --almost-all
+    do not list implied . and ..
+
+--author
+    with -l, print the author of each file
+```              
+
+Please explore manual pages of all the above commands for available options. 
+
+
+## Linux text processing
+
+*(a)* cut \
+The cut command is a command line utility to cut a section from a file. Please see "man cut" for available options.
+
+To cut a section of file use "-c" (characters)
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+cut -c1-10 SARS-CoV-2.fa
+```
+</div>
+
+The option "-c1-10" will output first 10 characters from the input file. 
+
+Few options:
+-c: cut based on character position 
+-d: cut based on delimiter
+-f: field number
+
+We have a file named "human_viruses.txt" with all the virus names, GenBank ids and genome length. These fields are separated by "|" symbol.
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+head human_viruses.txt
+```
+</div>
+
+To get a list of the GenBank id,
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+cut -d "|" -f2 human_viruses.txt
+```
+</div>
+
+*(b)* sort \
+The sort command is used to sort the input content.
+
+Few options:
+-t: field separator
+-n: numeric sort
+-k: sort with a key (field) 
+-r: reverse sort
+-u: print unique entries 
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+sort -t "|" -nrk6 human_viruses.txt 
+```
+</div>
+
+*(c)* grep \
+grep searches the input for a given pattern.
+
+```
+Few options:
+-A: after context
+-B: before context
+-C: before and after context
+-c: count
+-l: file with match
+-i: ignore case
+-o: only match
+-v: invert match
+-w: word match 
+```
+
+To get the list of all Hepatitis viruses from 'human_viruses.txt' file,
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+grep "Hepatitis" human_viruses.txt
+```
+</div>
+
+*(d)* wc \
+The command “wc” can be used in 2 ways, which counts lines, words or characters.
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+wc -l outbreak.csv
+```
+</div>
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+cat outbreak.csv | wc -l
+```
+
+*(e)* uniq \
+The uniq command extracts unique lines from the input. It is usually used in combination with sort to count unique values in the input.
+
+To get the list of countries that has had an outbreak in 2023:
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+cut -d, -f3 outbreak.csv | sort | uniq 
+```
+
+Other text processing commands worth looking at are: tr, rev, sed and paste.
+
+### I/O control in Linux
+When you run a command, the output is usually sent to standard output (stdout) ie. the terminal. However, we can redirect the standard output to a file using ">".
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+ls > list
+cat list
+```
+
+The first command creates a new file called list with all the file names in the directory. If there exists a file already named "list", it is overwritten with the output of the command. Instead, we can append to a file using ">>" redirection. 
+
+Another kind of output that is generated by programs is standard error. We must use “2>” to redirect it. 
+ 
+ls /foo 2> error
+
+To redirect stdout and stderr to a file use "&>".
+
+
+
+
+
 
 
 
