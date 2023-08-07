@@ -561,7 +561,7 @@ This command kills the job with the process id 1234. As a user you can kill only
 16. Extract first 10 lines of "outbreak.csv", sort them and save as "outbreak_1.csv". Extract first 20 lines of outbreak.csv, sort them and save as "outbreak_2.csv".
 17. Extract common lines between the files "outbreak_1.csv" and "outbreak_2.csv" (use “comm” command, type "man comm" to get information) and save the output into a file named "output_1"
 18. Which command would you use to find the word “pattern” from the file, “filename.txt”? Using that command, extract the “BioProject” information from the file SARS-CoV-2.gb.
-19. How many proteins does SARS-CoV-2 code for? Use the file SARS-CoV-2.gb to extract protein identifiers ("protein_id").
+19. Use the file SARS-CoV-2.gb to extract protein identifiers ("protein_id"). Remove the pattern "protein_id" from the output.
 20. Which option with the command "rm" is required to remove a directory? 
 
 
