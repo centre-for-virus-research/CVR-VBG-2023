@@ -27,7 +27,6 @@ body {text-align: justify}
 > <font color='blue'>Text in Blue – Refer “Info” section</font> \
 > <font color='magenta'>Text in Pink – Points to remember</font> \
 > <mark style="background-color: lightblue">Text background in lightblue - commands </mark> \
-> <mark style="background-color: Grey">Text background in Grey – Command output </mark> \
 > <mark style="background-color: Red">Text background in Red – Alert/Warning </mark> \
 
 ```
@@ -73,22 +72,13 @@ K Shell \
 
 Among these Bourne Again Shell (BASH) is the most popular one. This is the default shell on the system, and we will be using it throughout this course. 
 
-<div class = "red">
-```
-Check if bash is the default shell on alpha2 (is it zsh?)
-```
-</div>
-
 #### Connecting to Linux Server
 
 In this course, we will be using MobaXterm application to access the Ubuntu OS. Please use the provided username and password to login into your account.
 
 > Open MobaXterm -> Sessions -> New session -> <font color='blue'>ssh</font> -> add remote host and username -> OK -> Enter password -> Don't save password
 
-<div class = "red">
-```
->>> Talk about MobaXterm download here >>>
-```
+> Files can be downloaded and uploaded into the server
 
 ### Linux command structure 
 
@@ -111,6 +101,14 @@ ls -l Linux
 </div>
 
 "ls" is the command to list the contents of the directory, "-l" is the option for long listing and "Linux" is the input, which is optional in this case. Without the input, "ls" shows all the contents of the current directory (Type <mark style="background-color: lightblue">ls -l</mark>). 
+
+To clear the terminal screen,
+
+<div class = "blue">
+```{bash, eval=F, echo =T}
+clear
+```
+</div>
 
 ### First Commands
 
@@ -515,11 +513,11 @@ Some commands take time to finish the assigned job. For example, if you would li
 gzip list &
 ```
 
-We can get list of currently running jobs in the terminal by “jobs” command. This will give you all the background jobs running in the current terminal. If you want to see all the running processes in the system, use “top”. You can get user specific details in top using “-u” option. 
+We can get list of currently running jobs in the terminal by “jobs” command. This will give you all the background jobs running in the current terminal. If you want to see all the running processes in the system, use “top”. You can get user specific details in top using "-U" option. 
 
 <div class = "blue">
 ```{bash, eval=F, echo =T}
-top (check -u option on alpha2)
+top
 ```
 
 
@@ -541,7 +539,7 @@ kill 1234
 This command kills the job with the process id 1234. As a user you can kill only your jobs. You do not have permission to run this command on the process ids of other users.
 
 
-### Exercises
+## Exercises
 
 1.  Open a new terminal and navigate into Exercises directory.
 2.  Extract first 15 lines from the file “NC_045512.2_gene_2.fa” and save the output into “output.fa”
