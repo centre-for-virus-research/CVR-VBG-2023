@@ -4,6 +4,7 @@ In the quality assessment practical, we noticed that the sample 00094 did not fi
 
 
 <br/>
+
 ***
 > ### DIAMOND
 > DIAMOND is a BLASTX equivalent but with at least 500 times speed performance. It is an aligner for protein and translated DNA searches. 
