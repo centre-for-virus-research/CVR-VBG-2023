@@ -16,7 +16,7 @@ In the quality assessment practical, we noticed that the sample 00094 did not fi
 >
 > Example to run an alignment
 > ```diamond blastx -d nr -q reads.fna -o matches.m8```
- 
+
 ***
 <br/>
 
