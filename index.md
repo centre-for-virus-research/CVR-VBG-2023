@@ -1,10 +1,3 @@
----
-title: "VBG 2023"
-output: 
-  html_document:
-    toc: false
-    keep_md: true
----
 
 **Welcome to CVR 6th Annual training course on Viral Bioinformatics and Genomics course (21 - 25 August 2023)**
 
@@ -13,7 +6,7 @@ output:
 
 ## Course content
 
-The 2023 course will introduce the participants to the UNIX OS and Bash scripting along with a suite of bioinformatics tools covering the following topics: \ 
+The 2023 course will introduce the participants to the UNIX OS and Bash scripting along with a suite of bioinformatics tools covering the following topics: 
 
 ▪ HTS sequencing technologies: overview of the different HTS platforms and sample preparations \
 ▪ Unix OS: introduction to Unix OS and essential Bash scripting \
@@ -22,7 +15,7 @@ The 2023 course will introduce the participants to the UNIX OS and Bash scriptin
 ▪ De-novo assembly: overlap layout and de Bruijn graphs approaches for sequence assembly, quality assessment and merging contigs (e.g., ABySS, SPAdes, MIRA, IDBA-UD, QUAST) \
 ▪ Metagenomic analyses:sanitizing sequence datasets, assembling, annotating, visualization (e.g., MetAMOS, Krona, DIAMOND, Kraken) \
 ▪ Genomics: scaffolding, improving and finishing the assembly, gene annotation (e.g., ICORN, Artemis, RATT) \
-▪ Phylogenetic analysis: introduction to multiple sequence alignment and phylogenetic reconstruction (e.g., Muscle, PhyML, FigTree) \
+▪ Phylogenetic analysis: introduction to multiple sequence alignment and phylogenetic reconstruction (e.g., Muscle, PhyML, FigTree) 
 
 
 ### Prerequisites
