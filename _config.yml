@@ -7,7 +7,7 @@ include:
   - README.md
   - Introduction_to_Linux.Rmd
   - Read Cleaning.md
-  - ./ReferenceAlignment.html
+  - ReferenceAlignment.md
   - Phylogenetics.md
   - De Novo Practicals.md
   - QualityAssessment.md
