@@ -382,7 +382,7 @@ Inside this folder is a HTML file that we can view in a web browser (like Firefo
 firefox S1_html_results/S1.html
 ```
 
-***RJO CHECK IN COMPUTER ROOM - will this definitiely launch firefox via MobaXterm or should they download locally?***
+**NB:** Alternatively, you can download folders/files from the server to your local machine using the MobaXterm program's file browser on the left hand side.
 
 You should see something like this:
 
