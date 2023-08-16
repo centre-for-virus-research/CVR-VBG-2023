@@ -30,6 +30,8 @@ Download the data from the [SRA database](https://ncbi.nlm.nih.gov/sra) using fa
 fastq-dump --split-files SRR21065613
 ```
 
+(You might have to update vdb-config by running `vdb-config --interactive`). 
+
 The command line option `--split-files` preserves the paired-end data and creates the corresponding files. Otherwise, it combines the reads and saves them as a single file. 
 
 Do a quality check and trimming using the [trim_galore](https://github.com/FelixKrueger/TrimGalore) program.
