@@ -7,7 +7,7 @@ David L Robertson, MRC-University of Glasgow Centre for Virus Research
 
 **Aim**
 
-To introduce multiple sequence alignment and the inference of evolutionary history. You will learn how to align some homologous virus sequence data and infer evolutionary history, some different methods and how to test the reliability of your phylogenetic tree. 
+To introduce multiple sequence alignment and the inference of evolutionary history. You will learn how to align homologous virus sequence data and construct a phylogenetic tree, use some different methods and how to test the reliability of clades in your phylogeny. 
 
 
 **Task**
@@ -19,7 +19,7 @@ To complete your analysis the key stages to consider are 1/ sequence alignment, 
 
 **Software**
 
-You can use the alignment software CLUSTALW by typing ‘clustalw’ on the bioinformatics server Alpha <alpha.cvr.gla.ac.uk> using MobaXterm. For other alignment softwaew you can also try Muscle or Mafft (type ‘muscle’ or ‘mafft --help’ on the command line to see options). 
+You can use the alignment software CLUSTALW by typing ‘clustalw’ on the bioinformatics server Alpha <alpha.cvr.gla.ac.uk> using MobaXterm. For other alignment software you can also try Muscle or Mafft (type ‘muscle’ or ‘mafft --help’ on the command line to see options). 
 
 To use PhyML for tree inference, type ‘phyml --help’ on the command line to see options (or available online at http://www.atgc-montpellier.fr/phyml/). Note, PhyML takes PHYLIP formatted alignments. These be generated with CLUSTALW. If you have problems there’s a .phy alignment files in the folder /home3/robe01d/phylo/alignments. See PhyML’s online helpfile for further guidance on options: www.atgc-montpellier.fr/phyml/usersguide.php?type=command. 
 
@@ -34,19 +34,19 @@ The data set from the Iyer paper is quite large (available at /home3/robe01d/phy
 
 **Once you’ve generated some trees answer the questions below:**
 
-Question 1. What can you infer from your evolutionary tree about the relationship of virus from the two individuals: CH596 and CH455? What two properties of the phylogenetic tree support this relationship?
+**Question 1**. What can you infer from your evolutionary tree about the relationship of virus from the two individuals: CH596 and CH455? What two properties of the phylogenetic tree support this relationship?
 
 
-Question 2. What commands have you used to replicate the Figure 1A tree in Iyer et al, 2017? Why is PhyML, despite being a maximum likelihood method, relatively quick? What improvement would using the software RAxML bring to the analysis?
+**Question 2**. What commands have you used to replicate the Figure 1A tree in Iyer et al, 2017? Why is PhyML, despite being a maximum likelihood method, relatively quick? What improvement would using the software RAxML bring to the analysis?
 
 
-Question 3. Try a different method of tree inference such as the distance-method neighbor joining (available in CLUSTALW or SeaView). Does the result change in any meaningful way? What are the main differences between this method and maximum likelihood? What about the alignment method? 
+**Question 3**. Try a different method of tree inference such as the distance-method neighbor joining (available in CLUSTALW or SeaView). Does the result change in any meaningful way? What are the main differences between this method and maximum likelihood? What about the alignment method? 
 
 
-Question 4. Does a different alignment method, e.g., MUSCLE or MAFFT, give the same result? Are there potential issues with using CLUSTALW (hint, what version of CLUSTAL does SeaView implement)?
+**Question 4**. Does a different alignment method, e.g., MUSCLE or MAFFT, give the same result? Are there potential issues with using CLUSTALW (hint, what version of CLUSTAL does SeaView implement)?
 
 
-Question 5. Have a go implementing bootstrapping. What does bootstrapping do? How does it contribute to the analysis? 
+**Question 5**. Have a go implementing bootstrapping. What does bootstrapping do? How does it contribute to the analysis? 
 
 
-Question 6. Why does the substitution model used matter? What does the software jModelTest used in the Iyer paper do?
+**Question 6**. Why does the substitution model used matter? What does the software jModelTest used in the Iyer paper do?
