@@ -1,33 +1,3 @@
----
-title: "Introduction to Linux"
-author: "Srikeerthana Kuchi"
-#date: "2023-08-16"
-output:
-  html_document:
-    toc: true
-    toc_depth: 3
-    highlight: tango
-    keep_md: true
----
-
-
-
-<style>
-div.blue pre { background-color:lightblue; }
-div.red pre { background-color:red; }
-body {text-align: justify}
-</style>
-
-<!-- #<style type="text/css"> -->
-<!-- #body{font-size: 13pt;} -->
-<!-- #</style> -->
-
-> **Color codes** \
-> <font color='blue'>Text in Blue – Refer “Info” section</font> \
-> <font color='magenta'>Text in Pink – Points to remember</font> \
-> <mark style="background-color: lightblue">Text background in lightblue - commands </mark> \
-> <mark style="background-color: Red">Text background in Red – Alert/Warning </mark> \
-
 ```
 Command line shortcuts 
 
@@ -67,7 +37,7 @@ The most common shells are:
 Bourne Shell \
 Bourne Again Shell – BASH (variant is Z Shell) \
 C Shell (variant is T Shell) \
-K Shell \
+K Shell 
 
 Among these Bourne Again Shell (BASH) is the most popular one. This is the default shell on the system, and we will be using it throughout this course. 
 
@@ -144,7 +114,7 @@ Tab completion is a trick that normally reduces this risk significantly. Instead
 
 </font>
 
-### Points to remember \
+### Points to remember 
 
 <font color='magenta'>
 
@@ -180,7 +150,7 @@ Information (from left to right): \
 •	Group name \
 •	Number of bytes \
 •	Abbreviated month, last modified date and time \
-•	File/Directory name \
+•	File/Directory name 
 
 *(b)* pwd \
 Returns the path of the current working directory (print working directory) to the standard output. \
@@ -550,16 +520,16 @@ top
 ```
 
 
-Few of the important columns in top output: \
+Few of the important columns in top output: 
 
-* PID: Process Id, this is a unique number used to identify the process \
-* COMMAND: Command Name \
-* S: Process Status: The status of the task which can be one of: \
-  + D = uninterruptible sleep \
-  + R = running \
-  + S = sleeping \
-  + T = traced or stopped \
-  + Z = zombie \
+* PID: Process Id, this is a unique number used to identify the process 
+* COMMAND: Command Name 
+* S: Process Status: The status of the task which can be one of: 
+  + D = uninterruptible sleep 
+  + R = running 
+  + S = sleeping 
+  + T = traced or stopped 
+  + Z = zombie 
 
 If you want to stop a running background job use “kill” command followed by the process id. 
 
