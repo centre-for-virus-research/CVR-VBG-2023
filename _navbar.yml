@@ -1,0 +1,35 @@
+name: "CVR"
+title: "VBG 2023"
+type: inverse
+left:
+  - text: "About VBG course"
+    menu:
+      - text: "History"
+        href: ./aboutme.html
+  - text: "Modules"
+    menu:
+       - text: "Introduction to Linux"
+         href: ./Introduction_to_Linux.html
+       - text: "Read Cleaning"
+         href: ./Read-Cleaning.html
+       - text: "ReferenceAlignment"
+         href: ./ReferenceAlignment.html
+       - text: "Phylogenetics"
+         href: ./Phylogenetics.html
+       - text: "De Novo Practicals"
+         href: ./De-Novo-Practicals.html
+       - text: "QualityAssessment"
+         href: ./QualityAssessment.html
+       - text: "Metagenomics"
+         href: ./Metagenomics.html
+       - text: "KmerMetagenomics"
+         href: ./KmerMetagenomics.html
+       - text: "Transcriptomics"
+         href: ./Transcriptomics.html
+       
+
+  - text: "Contact"
+    href: ./contact.html
+right:
+  - icon: fa-github fa-lg
+    href: https://github.com/centre-for-virus-research
