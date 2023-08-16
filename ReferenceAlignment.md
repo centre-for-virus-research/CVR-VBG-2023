@@ -35,8 +35,6 @@ This practical is associated with a lecture on Reference Alignment of High-Throu
  	+ [5.1: Variant calling on your own](#51-variant-calling-on-your-own)
 * [6: Extra data](#6-extra-data)
 * [7: Assembly visualisation with tablet](#7-assembly-visualisation-with-tablet)
-* [8: Glossary](#8-glossary)
-* [9: Bash script example](#9-bash-script-example)
  
 # 0: Overview
 
