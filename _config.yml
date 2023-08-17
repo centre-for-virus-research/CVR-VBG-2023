@@ -1,0 +1,24 @@
+theme: jekyll-theme-minimal
+logo: /assets/img/logo.png
+title: home
+url: //centre-for-virus-research.github.io
+baseurl: "/CVR-VBG-2023"
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+include:
+  - README.md
+  - Introduction_to_Linux.md
+  - Read Cleaning.md
+  - ReferenceAlignment.md
+  - Phylogenetics.md
+  - De Novo Practicals.md
+  - QualityAssessment.md
+  - Metagenomics.md
+  - KmerMetagenomics.md
+  - Transcriptomics.md
