@@ -1,3 +1,10 @@
+---
+layout: default
+title: QualityAssessment
+rank: 6
+---
+
+
 # Quality assessment of assemblies
 
 *Mastomys natalensis* is a multimammate rodent from Sierra Leone that lives in close proximity to humans, sometimes transmitting Lassavirus to humans. In a large-scale investigation of the transmission risks of Lassavirus in Sierra Leone, different rodent species were captured/marked/released around several villages. Samples of blood (BL), from urogenital swabs (US) and oral swabs (OS) were collected and tested for Lassavirus. Lassavirus positive samples were RNA extracted and deep sequenced.  
