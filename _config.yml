@@ -2,6 +2,7 @@ remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 title: CVR-VBG-2023
 url: //centre-for-virus-research.github.io
 baseurl: "/CVR-VBG-2023"
+color-scheme: light
 plugins:
   - jekyll-remote-theme
 relative_links:
