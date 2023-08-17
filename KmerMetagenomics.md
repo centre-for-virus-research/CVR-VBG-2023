@@ -1,3 +1,8 @@
+---
+layout: default
+title: KmerMetagenomics
+rank: 8
+---
 
 # Kmer based metagenomics
 ## [6th Viral Bioinformatics and Genomics Training Course](https://github.com/centre-for-virus-research/CVR-VBG-2023)
