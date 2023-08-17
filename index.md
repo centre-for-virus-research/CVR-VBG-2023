@@ -1,3 +1,6 @@
+---
+layout: default
+---
 
 ## **Welcome to CVR 6th Annual training course on Viral Bioinformatics and Genomics course (21 - 25 August 2023)**
 
