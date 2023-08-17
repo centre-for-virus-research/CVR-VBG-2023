@@ -29,13 +29,13 @@ title: Modules
   - name: Introduction to Linux
     link: ./Introduction_to_Linux.html
   - name: Read Cleaning
-    link: ./Read%20Cleaning.html`
+    link: ./ReadCleaning.html`
   - name: ReferenceAlignment
     link: ./ReferenceAlignment.html
   - name: Phylogenetics
     link: ./Phylogenetics.html
   - name: De Novo Practicals
-    link: ./De%20Novo%20Practicals.html`
+    link: ./DeNovoPracticals.html`
   - name: QualityAssessment
     link: ./QualityAssessment.html
   - name: Metagenomics
