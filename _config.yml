@@ -10,18 +10,6 @@ relative_links:
   enabled: true
   collections: true
 favicon: true
-include:
-  - README.md
-  - Introduction_to_Linux.md
-  - Read Cleaning.md
-  - ReferenceAlignment.md
-  - Phylogenetics.md
-  - De Novo Practicals.md
-  - QualityAssessment.md
-  - Metagenomics.md
-  - KmerMetagenomics.md
-  - Transcriptomics.md
-
 navigation:
 title: Modules
   - name: About
@@ -44,15 +32,11 @@ title: Modules
     link: ./KmerMetagenomics.html
   - name: Transcriptomics
     link: ./Transcriptomics.html
-
-
 kramdown:
   syntax_highlighter: rouge
   input: GFM
   auto_ids:       true
-  toc_levels:     1..3
-    
-  
+  toc_levels:     1..3  
 platforms:
   - name: GitHub page of CVR
     icon: <i class="fa-brands fa-github"></i>
