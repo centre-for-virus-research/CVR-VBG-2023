@@ -1,9 +1,3 @@
----
-layout: default
-title: Read Cleaning
-rank: 2
----
-
 **Read Cleaning Practical**
 Derek Wright, MRC-University of Glasgow Centre for Virus Research
 [**Derek.Wright@glasgow.ac.uk**](mailto:Derek.Wright@glasgow.ac.uk)
@@ -42,7 +36,6 @@ my_file.txt
     - . is shorthand for the current working directory
     - .. is shorthand for the directory above
     - \* may be used as a wildcard to match file names
-      
 ## Dataset
 
 First let’s copy over a folder of data to analyse:
@@ -75,7 +68,7 @@ Each dataset is opened in its own tab. Green ticks in the sidebar for the qualit
 You could save each report individually, but an alternative workflow is to run FASTQC from the command line, instead of from the GUI, outputting a FASTQC report for each sample and then collating the reports into a single report using MultiQC.
 ```
 mkdir reports
-fastqc -o reports \*.fastq.gz
+fastqc -o reports *.fastq.gz
 cd reports
 multiqc .
 ```
@@ -98,10 +91,10 @@ Useful options include:
 Let's trim our paired-end read files:
 ```
 cd ..
-trim\_galore --paired \*.fastq.gz
+trim_galore --paired *.fastq.gz
 ```
 Now let's list the directory contents:
 ```
 ls
 ```
-You should see new trimmed sequence files that have been created by Trim Galore, with names ending in *\_trimmed.fq.gz*
+You should see new trimmed sequence files that have been created by Trim Galore, with names of each file pair ending in  *_val_1.fq.gz* and *_val_2.fq.gz*
