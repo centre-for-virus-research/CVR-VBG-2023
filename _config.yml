@@ -12,6 +12,7 @@ relative_links:
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+favicon: true
 include:
   - README.md
   - Introduction_to_Linux.md
@@ -23,3 +24,9 @@ include:
   - Metagenomics.md
   - KmerMetagenomics.md
   - Transcriptomics.md
+
+
+platforms:
+  - name: GitHub
+    icon: <i class="fa-brands fa-github"></i>
+    link: https://github.com/centre-for-virus-research
