@@ -24,7 +24,7 @@ include:
 
 navigation:
   - name: About
-    link: ./about.html
+    link: ./index.html
   - name: Introduction to Linux
     link: ./Introduction_to_Linux.html
   - name: Read Cleaning
