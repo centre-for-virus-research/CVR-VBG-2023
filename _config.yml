@@ -25,7 +25,15 @@ include:
   - KmerMetagenomics.md
   - Transcriptomics.md
 
-
+navigation:
+  - name: About
+    link: ./about.html
+  - name: Introduction_to_Linux.md
+    link: ./Introduction_to_Linux.html
+  - name: Read Cleaning.md
+    link: ./"Read Cleaning.html"
+    
+  
 platforms:
   - name: GitHub
     icon: <i class="fa-brands fa-github"></i>
