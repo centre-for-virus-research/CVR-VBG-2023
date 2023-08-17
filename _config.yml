@@ -5,6 +5,9 @@ plugins:
 relative_links:
   enabled: true
   collections: true
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
 include:
   - README.md
   - Introduction_to_Linux.md
