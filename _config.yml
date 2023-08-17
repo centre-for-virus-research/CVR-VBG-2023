@@ -5,7 +5,7 @@ relative_links:
   collections: true
 include:
   - README.md
-  - Introduction_to_Linux.Rmd
+  - Introduction_to_Linux.md
   - Read Cleaning.md
   - ReferenceAlignment.md
   - Phylogenetics.md
