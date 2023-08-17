@@ -1,4 +1,5 @@
 theme: jekyll-theme-minimal
+logo: /assets/img/logo.png
 title: home
 url: //centre-for-virus-research.github.io
 baseurl: "/CVR-VBG-2023"
