@@ -23,6 +23,7 @@ include:
   - Transcriptomics.md
 
 navigation:
+title: Modules
   - name: About
     link: ./index.html
   - name: Introduction to Linux
