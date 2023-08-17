@@ -10,3 +10,7 @@ relative_links:
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+# Gems
+plugins:
+  - jekyll-paginate
