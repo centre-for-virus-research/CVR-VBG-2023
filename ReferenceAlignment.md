@@ -593,7 +593,6 @@ LoFreq simply calls the reference position and mutation present, it does not cha
 ```
 /software/snpEff/scripts/snpEff -ud 0 NC_045512.2 S1.vcf > S1_snpeff.vcf
 ```
-**RJO - At the moment this gives a permsission error - need Scott to run it to so that it downloads the reference DB for use by everyone else - but have duplicated into ../Scripts/ in case**
 
 Breaking this command down:
 
