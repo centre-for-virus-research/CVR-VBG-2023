@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
-title: CVR-VBG-2023
 logo: /assets/img/logo.png
+title: CVR-VBG-2023
 url: //centre-for-virus-research.github.io
 plugins:
   - jekyll-relative-links
