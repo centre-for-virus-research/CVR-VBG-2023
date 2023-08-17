@@ -1,3 +1,9 @@
+---
+layout: default
+title: Read Cleaning
+rank: 2
+---
+
 **Read Cleaning Practical**
 Derek Wright, MRC-University of Glasgow Centre for Virus Research
 [**Derek.Wright@glasgow.ac.uk**](mailto:Derek.Wright@glasgow.ac.uk)
