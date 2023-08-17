@@ -28,13 +28,28 @@ include:
 navigation:
   - name: About
     link: ./about.html
-  - name: Introduction_to_Linux.md
+  - name: Introduction_to_Linux
     link: ./Introduction_to_Linux.html
-  - name: Read Cleaning.md
+  - name: Read Cleaning
     link: ./"Read Cleaning.html"
+  - name: ReferenceAlignment
+    link: ./ReferenceAlignment.html
+  - name: Phylogenetics
+    link: ./Phylogenetics.html
+  - name: De Novo Practicals
+    link: ./"De Novo Practicals.html"
+  - name: QualityAssessment
+    link: ./QualityAssessment.html
+  - name: Metagenomics
+    link: ./Metagenomics.html
+  - name: KmerMetagenomics
+    link: ./KmerMetagenomics.html
+  - name: Transcriptomics
+    link: ./Transcriptomics.html
+    
     
   
 platforms:
-  - name: GitHub
+  - name: GitHub page of CVR Bioinformatics
     icon: <i class="fa-brands fa-github"></i>
     link: https://github.com/centre-for-virus-research
