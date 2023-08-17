@@ -1,3 +1,8 @@
+---
+layout: default
+title: De Novo Practicals
+rank: 5
+---
 
 # *De Novo* Assembly Practical
 ---
