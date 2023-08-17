@@ -1,3 +1,9 @@
+---
+layout: default
+title: Metagenomics
+rank: 7
+---
+
 # Metagenomics - contig classification
 
 In the quality assessment practical, we noticed that the sample 00094 did not find a match to the Lassavirus sequences we provided as a reference. This could mean that Lassavirus isn’t in the sample so we will start by classifying the contigs using DIAMOND.
