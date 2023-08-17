@@ -1,3 +1,9 @@
+---
+layout: default
+title: Introduction_to_Linux
+rank: 1
+---
+
 ```
 Command line shortcuts 
 
