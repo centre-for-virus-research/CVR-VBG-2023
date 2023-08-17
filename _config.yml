@@ -31,13 +31,13 @@ navigation:
   - name: Introduction to Linux
     link: ./Introduction_to_Linux.html
   - name: Read Cleaning
-    link: ./"Read Cleaning.html"
+    link: ./`Read Cleaning.html`
   - name: ReferenceAlignment
     link: ./ReferenceAlignment.html
   - name: Phylogenetics
     link: ./Phylogenetics.html
   - name: De Novo Practicals
-    link: ./"De Novo Practicals.html"
+    link: ./`De Novo Practicals.html`
   - name: QualityAssessment
     link: ./QualityAssessment.html
   - name: Metagenomics
