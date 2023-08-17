@@ -42,6 +42,7 @@ my_file.txt
     - . is shorthand for the current working directory
     - .. is shorthand for the directory above
     - \* may be used as a wildcard to match file names
+      
 ## Dataset
 
 First let’s copy over a folder of data to analyse:
