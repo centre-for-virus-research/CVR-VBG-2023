@@ -9,9 +9,6 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
 favicon: true
 include:
   - README.md
