@@ -10,9 +10,6 @@ relative_links:
   collections: true
 kramdown:
   input: GFM
-  auto_ids:       true
-  toc_levels:     1..3
-  math_engine: mathjax
   syntax_highlighter: rouge
 include:
   - README.md
