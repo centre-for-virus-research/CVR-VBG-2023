@@ -3,7 +3,7 @@ title: CVR-VBG-2023
 url: //centre-for-virus-research.github.io
 baseurl: "/CVR-VBG-2023"
 plugins:
-  - jekyll-relative-links
+  - jekyll-remote-theme
 relative_links:
   enabled: true
   collections: true
