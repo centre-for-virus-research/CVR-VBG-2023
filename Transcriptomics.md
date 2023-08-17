@@ -3,10 +3,8 @@ layout: default
 rank: 9
 ---
 
----
-title: "RNA-Seq Workshop"
-author: "Quan Gu"
----
+# RNA-Seq Workshop
+## Quan Gu
 
 The following details the steps introduce the classical RNA-Seq data processing pipeline:
 
