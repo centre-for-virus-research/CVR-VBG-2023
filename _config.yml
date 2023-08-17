@@ -48,6 +48,6 @@ title: Modules
     
   
 platforms:
-  - name: GitHub page of CVR Bioinformatics
+  - name: GitHub page of CVR
     icon: <i class="fa-brands fa-github"></i>
     link: https://github.com/centre-for-virus-research
