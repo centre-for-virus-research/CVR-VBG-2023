@@ -1,3 +1,9 @@
+---
+layout: default
+title: ReferenceAlignment
+rank: 3
+---
+
 # Reference Alignment Practical
 ## [6th Viral Bioinformatics and Genomics Training Course](https://github.com/centre-for-virus-research/CVR-VBG-2023)
 * Monday 21st - Friday 25th August 2023
