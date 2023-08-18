@@ -138,7 +138,7 @@ Information (from left to right): \
 •    Number of links \
 •    Owner name \
 •    Group name \
-•    Number of bytes \ 
+•    Number of bytes
 •    Abbreviated month, last modified date and time \
 •    File/Directory name 
 
