@@ -111,12 +111,14 @@ Tab completion is a trick that normally reduces this risk significantly. Instead
 | Mac         | A Macintosh computer                                                                        |
 
 
-| > ### **Points to remember**: |
-| > Linux commands are case sensitive and are always single words \ |
-| > Options follow the command - and they start with a single hyphen (-) and a character or a double hyphen (- -) and a word \ |
-| > Single character options can be combined \ |
-| > Argument can be one or two inputs \ |
-| > You can write more than one command separating with a semicolon; You can use “tab” to auto-fill the command |
+| > ### **Points to remember**:                                          |
+| > Linux commands are case sensitive and are always single words \      |
+| > Options follow the command - and they start with a single hyphen (-) |
+    and a character or a double hyphen (- -) and a word \                |
+| > Single character options can be combined \                           |
+| > Argument can be one or two inputs \                                  |
+| > You can write more than one command separating with a semicolon; You |
+    can use “tab” to auto-fill the command                               |
 
 ### Important Commands
 
