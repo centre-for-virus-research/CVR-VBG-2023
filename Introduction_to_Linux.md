@@ -6,6 +6,7 @@ rank: 1
 
 # Introduction to Linux
 ### Author: Srikeerthana Kuchi
+#### Contact: Srikeerthana.Kuchi@glasgow.ac.uk
 
 ```
 Command line shortcuts 
