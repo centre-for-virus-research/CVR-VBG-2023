@@ -154,7 +154,7 @@ pwd
 Change current working directory to the specified directory. 
 
 ```bash
-cd Exercises/
+cd Linux/
 pwd
 ```
 
