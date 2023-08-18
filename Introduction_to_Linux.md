@@ -65,15 +65,11 @@ Copy the command below and paste it into your command line to copy the contents 
 cp -R /home4/VBG_data/Linux .
 ```
 
-</div>
-
 All Linux commands are single words (can be alpha-numeric), with optional parameters followed by arguments. For historical reasons, some of the early commands are only two letter long and case sensitive. Most of the command options (also called flags) are single letters. They should be specified after the command before giving any input. 
 
 ```bash
 ls -l Linux
 ```
-
-</div>
 
 "ls" is the command to list the contents of the directory, "-l" is the option for long listing and "Linux" is the input, which is optional in this case. Without the input, "ls" shows all the contents of the current directory (Type <mark style="background-color: lightblue">ls -l</mark>). 
 
@@ -82,8 +78,6 @@ To clear the terminal screen,
 ```bash
 clear
 ```
-
-</div>
 
 ### First Commands
 
@@ -100,8 +94,6 @@ Typing out longer file names can be boring, and you are likely to make typos tha
 
 Tab completion is a trick that normally reduces this risk significantly. Instead of typing out "ls Interesting_stuff/", try typing “ls Int” and press the Tab button (instead of Enter). The rest of the folder/file names that begin with “Int” should be listed. If you have two folders/files with similar names (e.g., my_awesome_scripts/ and my_awesome_results/) then you might need to give your terminal a bit of a hand to work out which one you want. In this case if you type "ls –l m", when you press Tab the terminal would read "ls –l my_awesome_". You could then type "s" followed by another press of Tab button and it would figure out that you meant "my_awesome_scripts/".
 
-<!-- ### <span style="text-decoration:underline">Info</span> -->
-
 ### Info
 
 | Terminology | Description                                                                                 |
@@ -114,17 +106,14 @@ Tab completion is a trick that normally reduces this risk significantly. Instead
 | PC          | A personal computer                                                                         |
 | Mac         | A Macintosh computer                                                                        |
 
-</font>
 
-### Points to remember
+> ### Points to remember
 
-> •    Linux commands are case sensitive and are always single words 
-> •    Options follow the command - and they start with a single hyphen (-) and a character or a double hyphen (- -) and a word 
-> •    Single character options can be combined 
-> •    Argument can be one or two inputs 
-> •    You can write more than one command separating with a semicolon; You can use “tab” to auto-fill the command 
-
-</font>
+> Linux commands are case sensitive and are always single words \
+> Options follow the command - and they start with a single hyphen (-) and a character or a double hyphen (- -) and a word \
+> Single character options can be combined \
+> Argument can be one or two inputs \
+> You can write more than one command separating with a semicolon; You can use “tab” to auto-fill the command \
 
 ### Important Commands
 
