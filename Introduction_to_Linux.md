@@ -29,9 +29,9 @@ Ctrl+u: Removes till the beginning
 
 ## Introduction
 
-[Linux](#Info) is an open-source operating system [OS](#Info) developed based on the kernel created by Linus Benedict Torvalds. In the last two decades, Linux has gained much popularity and now is being used on many platforms. Nowadays, most high-end servers to mobile phones (Android OS or iOS) run on different variants of Linux.
+[Linux](#info) is an open-source operating system [OS](#info) developed based on the kernel created by Linus Benedict Torvalds. In the last two decades, Linux has gained much popularity and now is being used on many platforms. Nowadays, most high-end servers to mobile phones (Android OS or iOS) run on different variants of Linux.
 
-Linux computers/servers are installed for multi-user usage. In this course, we will work on a high performance cluster machine running [Ubuntu](#Info) server edition. Most of the commands specified in this manual can be used in any other distribution (i.e., CentOS, Debian, etc.) of Linux operating system. 
+Linux computers/servers are installed for multi-user usage. In this course, we will work on a high performance cluster machine running [Ubuntu](#info) server edition. Most of the commands specified in this manual can be used in any other distribution (i.e., CentOS, Debian, etc.) of Linux operating system. 
 
 #### Resource: How to install Ubuntu?
 
@@ -40,7 +40,7 @@ To install a desktop edition of Ubuntu on personal computers, please follow the 
 
 ### The Terminal
 
-We use terminal (AKA command line interface) to interact with the operating system. The terminal by default runs one of the “shells”. Shell is a program that sits between the user and the [kernel](#Info) and translates user commands (text) into machine code. The advantages of using command line are greater control and flexibility over the system or software and multiple commands can be saved in a file and executed as a program.
+We use terminal (AKA command line interface) to interact with the operating system. The terminal by default runs one of the “shells”. Shell is a program that sits between the user and the [kernel](#info) and translates user commands (text) into machine code. The advantages of using command line are greater control and flexibility over the system or software and multiple commands can be saved in a file and executed as a program.
 
 The most common shells are:
 
@@ -55,7 +55,7 @@ Among these Bourne Again Shell (BASH) is the most popular one. This is the defau
 
 In this course, we will be using MobaXterm application to access the Ubuntu OS. Please use the provided username and password to login into your account.
 
-> Open MobaXterm -> Sessions -> New session -> [ssh](#Info) -> add remote host and username -> OK -> Enter password -> Don't save password
+> Open MobaXterm -> Sessions -> New session -> [ssh](#info) -> add remote host and username -> OK -> Enter password -> Don't save password
 
 > Files can be downloaded and uploaded into the server
 
@@ -85,7 +85,7 @@ clear
 
 ### First Commands
 
-Directories are the Unix equivalent of folders on a [PC](#Info) or a [Mac](#Info). They are organized in a hierarchy, so directories can have sub-directories and so on. Directories, like folders, are useful to keep your data files organized. The location or directory you are currently in, is called the current working directory. The location or “full pathname” of the file SARS-CoV-2.fa in the 'Linux' directory can be expressed as: 
+Directories are the Unix equivalent of folders on a [PC](#info) or a [Mac](#info). They are organized in a hierarchy, so directories can have sub-directories and so on. Directories, like folders, are useful to keep your data files organized. The location or directory you are currently in, is called the current working directory. The location or “full pathname” of the file SARS-CoV-2.fa in the 'Linux' directory can be expressed as: 
 
 ```
 Do not type this - won't work
