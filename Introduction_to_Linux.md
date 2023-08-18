@@ -143,14 +143,14 @@ Information (from left to right): \
 •    Abbreviated month, last modified date and time \
 •    File/Directory name 
 
-*(b)* pwd \
+*(b)* [pwd](https://manpages.ubuntu.com/manpages/focal/en/man1/pwd.1posix.html) \
 Returns the path of the current working directory (print working directory) to the standard output. 
 
 ```bash
 pwd
 ```
 
-*(c)* cd \
+*(c)* [cd](https://manpages.ubuntu.com/manpages/focal/en/man1/cd.1posix.html) \
 Change current working directory to the specified directory. 
 
 ```bash
@@ -165,7 +165,7 @@ cd
 cd Linux/
 ```
 
-*(d)* mkdir \
+*(d)* [mkdir](https://manpages.ubuntu.com/manpages/focal/en/man1/mkdir.1.html) \
 This command creates a directory in the current working directory if no file/directory exists with the specified name. 
 
 ```bash
@@ -173,7 +173,7 @@ mkdir Practice
 ls -l
 ```
 
-*(e)* rmdir \
+*(e)* [rmdir](https://manpages.ubuntu.com/manpages/focal/en/man1/rmdir.1.html) \
 This command is used to remove directories. 
 
 ```bash
@@ -181,7 +181,7 @@ rmdir Practice
 ls -l
 ```
 
-*(f)* touch \
+*(f)* [touch](https://manpages.ubuntu.com/manpages/focal/en/man1/touch.1posix.html) \
 It is file’s time-stamp changing command. However, it can be used to create an empty file. This command is generally used to check if there is write permission for the current user.
 
 ```bash
@@ -189,7 +189,7 @@ touch temp-file
 ls -l
 ```
 
-*(g)* rm \
+*(g)* [rm](https://manpages.ubuntu.com/manpages/focal/en/man1/rm.1posix.html) \
 rm is used for removing files and directories.
 
 ```bash
@@ -200,7 +200,7 @@ ls -l
 > [!WARNING]
 > **To remove directories use "-r" option. Please remember once a file or directory is deleted, it will not go to "Recycle bin" in Linux and there is no way you can recover it.**
 
-*(h)* cp \
+*(h)* [cp](https://manpages.ubuntu.com/manpages/focal/en/man1/cp.1.html) \
  Copies the content of the source file/directory to the target file/directory. To copy directories, use "-r" option.
 
 ```bash
@@ -209,7 +209,7 @@ cp temp1 temp2
 ls -l
 ```
 
-*(i)* mv \
+*(i)* [mv](https://manpages.ubuntu.com/manpages/focal/en/man1/mv.1posix.html) \
 To move/rename a file or a directory.
 
 ```bash
@@ -221,7 +221,7 @@ ls -l
 
 The second command moves the "temp1" file into the directory "temp". The "." (dot) at the end of the command retains the name of the file, whereas the third command renames the file "temp2" to "temp3".
 
-*(j)* ln \
+*(j)* [ln](https://manpages.ubuntu.com/manpages/focal/en/man1/ln.1.html) \
 Link command is used to make links to files/directories. We encourage you to create links rather than copying data in order to save space.
 
 ```bash
@@ -231,14 +231,14 @@ ls -l
 
 ### File viewers
 
-*(a)* cat \
+*(a)* [cat](https://manpages.ubuntu.com/manpages/focal/en/man1/cat.1.html) \
 The concatenate command combines files (sequentially) and prints on the screen (standard output).
 
 ```bash
 cat SARS-CoV-2.fa
 ```
 
-*(b)* more/less \
+*(b)* [more](https://manpages.ubuntu.com/manpages/focal/en/man1/more.1posix.html)/[less](https://manpages.ubuntu.com/manpages/focal/en/man1/less.1.html) \
 These commands are used for viewing the content of the files; faster with large input files than text editors; not the entire file is read at the beginning.
 
 ```bash
@@ -247,7 +247,7 @@ more SARS-CoV-2.fa
 
 Press “Enter” to view lines further and “q” to quit the program
 
-*(c)* head/tail \
+*(c)* [head](https://manpages.ubuntu.com/manpages/focal/en/man1/head.1posix.html)/[tail](https://manpages.ubuntu.com/manpages/focal/en/man1/tail.1.html) \
 These commands show first/last 10 lines (default) respectively from a file.
 
 ```bash
@@ -258,7 +258,7 @@ head SARS-CoV-2.fa
 
 There are many non-graphical text editors like ed, emacs, vi and nano available on most Linux distributions. Some of them are very sophisticated (e.g., vi) and for advanced users. 
 
-Nano (earlier called pico) is like any graphical editor without a mouse. All commands are executed using the keyboard, using the <CTRL> key modifier. It can be used to edit virtually any kind of text file from the command line. Nano without a filename gives you a standard (blank) nano window. 
+[Nano](https://manpages.ubuntu.com/manpages/focal/en/man1/nano.1.html) (earlier called pico) is like any graphical editor without a mouse. All commands are executed using the keyboard, using the <CTRL> key modifier. It can be used to edit virtually any kind of text file from the command line. Nano without a filename gives you a standard (blank) nano window. 
 
 At the bottom of the screen, there are commands with a symbol in front. The symbol tells that you need to hold down the Control (Ctrl) key, and then press the corresponding letter of the command you wish to use. 
 
@@ -300,7 +300,7 @@ Please explore manual pages of all the above commands for available options.
 
 ### Linux text processing
 
-*(a)* cut \
+*(a)* [cut](https://manpages.ubuntu.com/manpages/focal/en/man1/cut.1.html) \
 The cut command is a command line utility to cut a section from a file. Please see "man cut" for available options.
 
 To cut a section of file use "-c" (characters)
@@ -330,7 +330,7 @@ To get a list of the GenBank id,
 cut -d "|" -f2 human_viruses.txt
 ```
 
-*(b)* sort \
+*(b)* [sort](https://manpages.ubuntu.com/manpages/focal/en/man1/sort.1posix.html) \
 The sort command is used to sort the input content.
 
 ```
@@ -346,7 +346,7 @@ Few options:
 sort -t "|" -nrk6 human_viruses.txt 
 ```
 
-*(c)* grep \
+*(c)* [grep](https://manpages.ubuntu.com/manpages/focal/en/man1/grep.1plan9.html) \
 grep searches the input for a given pattern.
 
 ```
@@ -368,7 +368,7 @@ To get the list of all Hepatitis viruses from 'human_viruses.txt' file,
 grep "Hepatitis" human_viruses.txt
 ```
 
-*(d)* wc \
+*(d)* [wc](https://manpages.ubuntu.com/manpages/focal/en/man1/wc.1.html) \
 The command “wc” can be used in 2 ways, which counts lines, words or characters.
 
 ```bash
@@ -379,7 +379,7 @@ wc -l outbreak.csv
 cat outbreak.csv | wc -l
 ```
 
-*(e)* uniq \
+*(e)* [uniq](https://manpages.ubuntu.com/manpages/focal/en/man1/uniq.1plan9.html) \
 The uniq command extracts unique lines from the input. It is usually used in combination with sort to count unique values in the input.
 
 To get the list of countries that has had an outbreak in 2023:
