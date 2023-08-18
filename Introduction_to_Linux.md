@@ -121,7 +121,7 @@ Tab completion is a trick that normally reduces this risk significantly. Instead
 
 ### Important Commands
 
-*(a)* ls
+*(a)* ls \
 Lists information about the files/directories. Default is the current directory. Sorts entries alphabetically. 
 
 Commonly used options: 
@@ -142,14 +142,14 @@ Information (from left to right):
 •    Abbreviated month, last modified date and time 
 •    File/Directory name 
 
-*(b)* pwd 
+*(b)* pwd \
 Returns the path of the current working directory (print working directory) to the standard output. 
 
 ```bash
 pwd
 ```
 
-*(c)* cd 
+*(c)* cd \
 Change current working directory to the specified directory. 
 
 ```bash
@@ -164,7 +164,7 @@ cd
 cd Linux/
 ```
 
-*(d)* mkdir 
+*(d)* mkdir \
 This command creates a directory in the current working directory if no file/directory exists with the specified name. 
 
 ```bash
@@ -172,7 +172,7 @@ mkdir Practice
 ls -l
 ```
 
-*(e)* rmdir 
+*(e)* rmdir \
 This command is used to remove directories. 
 
 ```bash
@@ -180,7 +180,7 @@ rmdir Practice
 ls -l
 ```
 
-*(f)* touch 
+*(f)* touch \
 It is file’s time-stamp changing command. However, it can be used to create an empty file. This command is generally used to check if there is write permission for the current user.
 
 ```bash
@@ -188,7 +188,7 @@ touch temp-file
 ls -l
 ```
 
-*(g)* rm 
+*(g)* rm \
 rm is used for removing files and directories.
 
 ```bash
@@ -199,7 +199,7 @@ ls -l
 > [!WARNING]
 > > **To remove directories use "-r" option. Please remember once a file or directory is deleted, it will not go to "Recycle bin" in Linux and there is no way you can recover it.**
 
-*(h)* cp 
+*(h)* cp \
  Copies the content of the source file/directory to the target file/directory. To copy directories, use "-r" option.
 
 ```bash
@@ -208,7 +208,7 @@ cp temp1 temp2
 ls -l
 ```
 
-*(i)* mv 
+*(i)* mv \
 To move/rename a file or a directory.
 
 ```bash
@@ -220,7 +220,7 @@ ls -l
 
 The second command moves the "temp1" file into the directory "temp". The "." (dot) at the end of the command retains the name of the file, whereas the third command renames the file "temp2" to "temp3".
 
-*(j)* ln 
+*(j)* ln \
 Link command is used to make links to files/directories. We encourage you to create links rather than copying data in order to save space.
 
 ```bash
@@ -230,14 +230,14 @@ ls -l
 
 ### File viewers
 
-*(a)* cat 
+*(a)* cat \
 The concatenate command combines files (sequentially) and prints on the screen (standard output).
 
 ```bash
 cat SARS-CoV-2.fa
 ```
 
-*(b)* more/less 
+*(b)* more/less \
 These commands are used for viewing the content of the files; faster with large input files than text editors; not the entire file is read at the beginning.
 
 ```bash
@@ -246,7 +246,7 @@ more SARS-CoV-2.fa
 
 Press “Enter” to view lines further and “q” to quit the program
 
-*(c)* head/tail 
+*(c)* head/tail \
 These commands show first/last 10 lines (default) respectively from a file.
 
 ```bash
@@ -299,7 +299,7 @@ Please explore manual pages of all the above commands for available options.
 
 ### Linux text processing
 
-*(a)* cut 
+*(a)* cut \
 The cut command is a command line utility to cut a section from a file. Please see "man cut" for available options.
 
 To cut a section of file use "-c" (characters)
@@ -329,7 +329,7 @@ To get a list of the GenBank id,
 cut -d "|" -f2 human_viruses.txt
 ```
 
-*(b)* sort 
+*(b)* sort \
 The sort command is used to sort the input content.
 
 ```
@@ -345,7 +345,7 @@ Few options:
 sort -t "|" -nrk6 human_viruses.txt 
 ```
 
-*(c)* grep 
+*(c)* grep \
 grep searches the input for a given pattern.
 
 ```
@@ -367,7 +367,7 @@ To get the list of all Hepatitis viruses from 'human_viruses.txt' file,
 grep "Hepatitis" human_viruses.txt
 ```
 
-*(d)* wc 
+*(d)* wc \
 The command “wc” can be used in 2 ways, which counts lines, words or characters.
 
 ```bash
@@ -378,7 +378,7 @@ wc -l outbreak.csv
 cat outbreak.csv | wc -l
 ```
 
-*(e)* uniq 
+*(e)* uniq \
 The uniq command extracts unique lines from the input. It is usually used in combination with sort to count unique values in the input.
 
 To get the list of countries that has had an outbreak in 2023:
