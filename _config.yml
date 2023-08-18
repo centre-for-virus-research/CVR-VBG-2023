@@ -13,9 +13,9 @@ favicon: true
 
 navigation:
   - name: About
-    link: ./data/index.html
+    link: ./docs/index.html
   - name: Introduction to Linux
-    link: ./data/Introduction_to_Linux.html
+    link: ./docs/Introduction_to_Linux.html
   - name: Read Cleaning
     link: ./data/ReadCleaning.html
   - name: ReferenceAlignment
