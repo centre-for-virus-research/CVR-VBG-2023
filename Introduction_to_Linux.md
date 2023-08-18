@@ -121,7 +121,7 @@ Tab completion is a trick that normally reduces this risk significantly. Instead
 
 ### Important Commands
 
-*(a)* ls 
+*(a)* ls
 Lists information about the files/directories. Default is the current directory. Sorts entries alphabetically. 
 
 Commonly used options: 
