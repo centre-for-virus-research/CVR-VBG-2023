@@ -6,83 +6,82 @@ rank: 9
 # RNA-Seq Workshop
 ## Quan Gu
 
-The following details the steps introduce the classical RNA-Seq data processing pipeline:
+A classical RNA-Seq data processing pipeline contains the following steps:
 
 • Quality control \
 • Mapping RNA-Seq reads against a reference genome \
 • Visualizing reads and transcript structures \
 • Performing differential expression analysis \
 • Visualizing differential expression analysis \
-• Function annotation and pathway analysis  
+• Functional annotation and pathway analysis  
 
+In this course, all the data we are using has been subsampled to save time and space.
 
 ###  1.	Log on to the CVR server ### 
 
-Open MobaXterm and log on the CVR-Alpha2 server.
+Open MobaXterm and log on to the CVR-Alpha2 server.
 
-Step 1: Create a working directory and go to your directory by the commands:
+Step 1: Create a working directory and go to your directory using the commands:
 
 ```
 mkdir RNASeq2023
 cd RNASeq2023
 ```
   
-This workshop use the single-end strand-specific RNA-Seq reads corresponding to six FASTQ samples, located at **/home4/VBG_data/RNASeq**
+This workshop use single-end strand-specific RNA-Seq reads from six samples (6 fastq files), located in **/home4/VBG_data/RNASeq**
 
-You could generate the soft link to your current directory. 
-Condition1: Mock samples, 
-Condition2: Interferon treated samples.
- 
-**IFNb01.fastq; IFNb02.fastq; IFNb03.fastq**；
+You will generate soft links to these files in your current directory. 
 
-**Mock01.fastq; Mock02.fastq; Mock03.fastq**
+Condition1 - Mock samples: **Mock01.fastq; Mock02.fastq; Mock03.fastq**
 
-In this course, all the data we used have been subsampling for saving time and space.
+Condition2 - Interferon treated samples: **IFNb01.fastq; IFNb02.fastq; IFNb03.fastq**
 
-Step 2: Generate a soft link to the tutor directory and change to the directory by the commands:
+
+Step 2: Generate a soft link to the files, here is an example for one file:
 
 ```
 ln -s /home4/VBG_data/RNASeq/IFNb01.fastq
 ```
 
-We need to get the reference genome file as well.
+We need to make soft links to the reference genome file as well.
 
 ```
 ln -s /home4/VBG_data/RNASeq/Human
 ln -s /home4/VBG_data/RNASeq/Homo_sapiens.GRCh38.107.gtf
 ```
 
-Have a look at the human reference genome (GRCh38) and its annotation files, and print the last 50 lines of these files. 
+**Task**: Have a look at the human reference genome (GRCh38) and its annotation files, and print the last 50 lines of these files. 
 
 ###  2. Quality control ### 
 
-The first step of the RNA-Seq analysis is the Quality control. 
-Before we start the analysis, it is always a good start to inspect the quality of the samples. Here we use **FastQC** to visualize the quality of the sequences. To begin, simply run:
+The first step of RNA-Seq analysis is Quality control. 
+Before we start the analysis, it is always good inspect the quality of the samples. Here we use **FastQC** to visualize the quality of the sequences. To begin, simply run:
 ```
 fastqc 
 ```
-The software use command from terminal. This will bring up a GUI window for you on your desktop.  Load the sample from the GUI.
+The software use from the terminal will bring up a GUI window for you on your desktop.  Load a sample from the GUI.
 
 **File -> Open -> IFNb01.fastq**
 
-We could do trimming after quality control. The trimming includes quality trimming and adapter trimming.
+We could do trimming after quality control. Trimming includes quality trimming and adapter trimming.
 
-The trimming software: **Trim_galore**, **cutadapt** , **Prinseq**, **Trimmomatic**,etc.  
-At this workshop, we will use **Trim_galore** to trim the reads. 
-Note: the default adapter sequence of Illumina and Proton system are different.
-The command:
+Several trimming programs exist: **Trim_galore**, **cutadapt** , **Prinseq**, **Trimmomatic**,etc.  
+In this workshop, we will use **Trim_galore** to trim the reads. 
+Note: the default adapter sequence of Illumina and Proton sequencing platforms are different.
+
+The following command will trim with default settings:
 
 ```
 trim_galore IFNb01.fastq >/dev/null 2>&1
 ```
 
-Check the difference between raw data and trimmed data by (1)file size, (2)reads number and (3)reads quality.
+**Task**: Check the difference between raw data and trimmed data by (1) file size, (2) read number and (3) read quality.
 
 
 ###  3.	Mapping RNA-Seq reads against a reference genome ###  
 
-The next step is to align reads to the genome. The mapping output are BAM files is the binary version of a SAM file. A SAM file (.sam) is a tab-delimited text file that contains sequence alignment data. This step is most time-consuming.
-At this workshop, we will use **Hisat2** to map the reads to the reference genome, which is developed for RNA-Seq analysis.  Remember to build **Hisat2** index before you run mapping, which I have already done for you.
+The next step is to align reads to the genome. The mapping output are BAM files which is a binary version of a SAM file. A SAM file (.sam) is a tab-delimited text file that contains sequence alignment data. This step is most time-consuming step.
+In this workshop, we will use **Hisat2** to map the reads to the reference genome, which is a mapping program specifically developed for RNA-Seq analysis.  When doing this at home, remember to build the **Hisat2** index before you run the mapping, which I have already done for you. I have already done this for you and you can use it with the following command:
 
 ```
 genome='/home4/VBG_data/RNASeq/Human'
@@ -90,7 +89,7 @@ genome='/home4/VBG_data/RNASeq/Human'
 hisat2 -x $genome --rna-strandness R -U IFNb01_trimmed.fq -S IFNb01.sam
 ```
 
-We need to generate the BAM files as well, which is the binary version of SAM files. 
+This has produced a SAM file. We need to generate the BAM files as well, which is the binary version of SAM files. 
 
  ```
 samtools view -bh IFNb01.sam > IFNb01.bam
@@ -103,16 +102,11 @@ rm IFNb01.sam
 ```
 
 ### 4.	Visualizing reads and transcript structures ### 
-After getting your provided aligned BAM files, you could visualize transcript structures via Visualizing software. 
-The software: **IGV**, **Tablet**, **Ugene**, etc.
+After getting your provided aligned BAM files, you can visualize the location of the mapped transcripts using visulization software such as: **IGV**, **Tablet**, **Ugene**, etc.
 
 ### 5.	Performing differential expression analysis ###
-At this workshop, we will use edgeR for differential expression(DE). We omit the step of
-transcriptome assembly if we don’t want to discover novel DE genes from current genome in
-our analysis.
-There are two tools which could do mapping counts on genome. For the comparisons of them (**featureCounts** vs **htseq-count**), I have written a blog to talk about
-it 
-http://bioinformatics.cvr.ac.uk/blog/featurecounts-or-htseq-count/
+In this workshop, we will use edgeR for the differential expression(DE). Here, we omit the step of transcriptome assembly as we don’t want to discover novel DE genes from those in our current genome.
+There are two tools which can count the mapped transcripts in the genome. To learn more about how **featureCounts** and **htseq-count** compare, I have written a blog about it http://bioinformatics.cvr.ac.uk/blog/featurecounts-or-htseq-count/
 
 Here we use **featureCounts** to get the mapped raw counts of each gene in each sample.
 
@@ -125,7 +119,7 @@ rm temp.txt
 
 ```
 
-In this course, we don't have enough time to make all counts table by ourselves. However, we could do the following steps by the overall counts file generated by me from the real data.
+In this course, we don't have enough time to make all the count table by ourselves. However, we can use the overall counts file that I have prepared for you.
 
 Please copy the count file **DE1input.txt** into your own directory. 
 
@@ -134,24 +128,23 @@ cp /home4/VBG_data/RNASeq/DE1input.txt  .
 more DE1input.txt
 ```
 
-After then, we could open R and run **edgeR** to play DE analysis.
-Just type **R** in your command line.
+After, we can open R and run **edgeR** to carry out DE analysis.
 
-You could view the code of **edgeR** is here:
+I have written an Rscript called **edgeR** that has all the necessary commands. You can view the code of **edgeR** with the following command:
 
 ```
 more /home4/VBG_data/RNASeq/edgeR.r
 ```
 
-Here we used the classical mode of DE analysis in **edgeR**, which assumes all replicates within group are equal.
+Here we use the classical mode of DE analysis in **edgeR**, which assumes all replicates within group are equal.
 
-You could copy and paste the content from **edgeR.r** into **R**, or you could easily type 
+You can copy and paste the content from **edgeR.r** into **R** after opening R with the command ```R```, or you can simply type from the command line:
 
 ```
 Rscript /home4/VBG_data/RNASeq/edgeR.r
 ```
 
-Then you could get the output files are **DEG_edgeR.csv**, **cpm.csv** , **bcvplot.pdf**, **VolcanoPlot.png** and **mdsplot.pdf**.
+Then you will get the output files: **DEG_edgeR.csv**, **cpm.csv** , **bcvplot.pdf**, **VolcanoPlot.png** and **mdsplot.pdf**.
 
 
 ### 6. Function annotation and pathway analysis ### 
