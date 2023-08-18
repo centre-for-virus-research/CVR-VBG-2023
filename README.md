@@ -5,7 +5,7 @@ layout: default
 # CVR-VBG-2023 (The Centre for Virus Research-Viral Bioinformatics and Genomics Course-2023)
 
 ## **Welcome to CVR 6th Annual training course on Viral Bioinformatics and Genomics course (21 - 25 August 2023)**
-#### **Location: Boyd Orr building, University of Glasgow, United Kingdom**
+#### **Location: [Boyd Orr building](https://goo.gl/maps/MxN5UhB9ukpgx3sB7), University of Glasgow, United Kingdom**
 
 ## Course content
 
