@@ -71,7 +71,7 @@ cp -R /home4/VBG_data/Linux .
 
 All Linux commands are single words (can be alpha-numeric), with optional parameters followed by arguments. For historical reasons, some of the early commands are only two letter long and case sensitive. Most of the command options (also called flags) are single letters. They should be specified after the command before giving any input. 
 
-```bash
+```
 [ls](https://manpages.ubuntu.com/manpages/focal/en/man1/ls.1plan9.html) -l Linux
 ```
 
