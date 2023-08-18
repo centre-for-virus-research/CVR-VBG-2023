@@ -13,25 +13,25 @@ favicon: true
 
 navigation:
   - name: About
-    link: ./index.html
+    link: ./data/index.html
   - name: Introduction to Linux
-    link: ./Introduction_to_Linux.html
+    link: ./data/Introduction_to_Linux.html
   - name: Read Cleaning
-    link: ./ReadCleaning.html
+    link: ./data/ReadCleaning.html
   - name: ReferenceAlignment
-    link: ./ReferenceAlignment.html
+    link: ./data/ReferenceAlignment.html
   - name: Phylogenetics
-    link: ./Phylogenetics.html
+    link: ./data/Phylogenetics.html
   - name: De Novo Practicals
-    link: ./DeNovoPracticals.html
+    link: ./data/DeNovoPracticals.html
   - name: QualityAssessment
-    link: ./QualityAssessment.html
+    link: ./data/QualityAssessment.html
   - name: Metagenomics
-    link: ./Metagenomics.html
+    link: ./data/Metagenomics.html
   - name: KmerMetagenomics
-    link: ./KmerMetagenomics.html
+    link: ./data/KmerMetagenomics.html
   - name: Transcriptomics
-    link: ./Transcriptomics.html
+    link: ./data/Transcriptomics.html
 
 markdown: kramdown
 highlighter: rouge
