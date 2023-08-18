@@ -1,6 +1,6 @@
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 # title: CVR-VBG-2023
-logo: /assets/img/logo.png
+# logo: /assets/img/logo.png
 url: //centre-for-virus-research.github.io
 baseurl: "/CVR-VBG-2023"
 color-scheme: light
