@@ -36,7 +36,7 @@ Preference will be given to applicants who: (1) have some familiarity with HTS t
 ### [Timetable](https://drive.google.com/file/d/18wkXigU7Jx8VMeZsBAZ6OtmRVr1tn_NM/view?usp=share_link)
 
 ### Modules
-1. [Basic Linux Commands & Linux text processing] (./Introduction_to_Linux.html)
+1. [Basic Linux Commands & Linux text processing] (Introduction_to_Linux.html)
 
 
 
