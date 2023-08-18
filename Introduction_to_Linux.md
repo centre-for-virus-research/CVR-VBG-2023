@@ -124,22 +124,22 @@ Tab completion is a trick that normally reduces this risk significantly. Instead
 *(a)* ls \
 Lists information about the files/directories. Default is the current directory. Sorts entries alphabetically. 
 
-Commonly used options: 
--l long list 
--a show all files (including hidden files) 
+Commonly used options: \
+-l long list \
+-a show all files (including hidden files) \
 -t sort based on last modified time 
 
 ```bash
 ls -l
 ```
 
-Information (from left to right): 
-•    File permissions 
-•    Number of links 
-•    Owner name 
-•    Group name 
-•    Number of bytes 
-•    Abbreviated month, last modified date and time 
+Information (from left to right): \
+•    File permissions \
+•    Number of links \
+•    Owner name \
+•    Group name \
+•    Number of bytes \ 
+•    Abbreviated month, last modified date and time \
 •    File/Directory name 
 
 *(b)* pwd \
