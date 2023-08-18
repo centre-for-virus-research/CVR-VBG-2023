@@ -113,7 +113,7 @@ Tab completion is a trick that normally reduces this risk significantly. Instead
 > Options follow the command - and they start with a single hyphen (-) and a character or a double hyphen (- -) and a word \
 > Single character options can be combined \
 > Argument can be one or two inputs \
-> You can write more than one command separating with a semicolon; You can use “tab” to auto-fill the command \
+> You can write more than one command separating with a semicolon; You can use “tab” to auto-fill the command
 
 ### Important Commands
 
@@ -128,8 +128,6 @@ Commonly used options:
 ```bash
 ls -l
 ```
-
-</div>
 
 Information (from left to right): 
 •    File permissions 
@@ -147,8 +145,6 @@ Returns the path of the current working directory (print working directory) to t
 pwd
 ```
 
-</div>
-
 *(c)* cd 
 Change current working directory to the specified directory. 
 
@@ -157,16 +153,12 @@ cd Exercises/
 pwd
 ```
 
-</div>
-
 We are now in the directory "Exercises". Typing the command "cd .." changes it to the parent directory from which the previous command was typed in. Typing "cd" will change the current directory to the home directory.
 
 ```bash
 cd
 cd Linux/
 ```
-
-</div>
 
 *(d)* mkdir 
 This command creates a directory in the current working directory if no file/directory exists with the specified name. 
@@ -176,8 +168,6 @@ mkdir Practice
 ls -l
 ```
 
-</div>
-
 *(e)* rmdir 
 This command is used to remove directories. 
 
@@ -186,8 +176,6 @@ rmdir Practice
 ls -l
 ```
 
-</div>
-
 *(f)* touch 
 It is file’s time-stamp changing command. However, it can be used to create an empty file. This command is generally used to check if there is write permission for the current user.
 
@@ -195,8 +183,6 @@ It is file’s time-stamp changing command. However, it can be used to create an
 touch temp-file
 ls -l
 ```
-
-</div>
 
 *(g)* rm 
 rm is used for removing files and directories.
@@ -207,13 +193,7 @@ ls -l
 ```
 
 > [!WARNING]
-> 
-> 
 > > **To remove directories use "-r" option. Please remember once a file or directory is deleted, it will not go to "Recycle bin" in Linux and there is no way you can recover it.**
-> > 
-> > 
-
-
 
 *(h)* cp 
  Copies the content of the source file/directory to the target file/directory. To copy directories, use "-r" option.
@@ -223,8 +203,6 @@ touch temp1
 cp temp1 temp2
 ls -l
 ```
-
-</div>
 
 *(i)* mv 
 To move/rename a file or a directory.
@@ -236,8 +214,6 @@ mv temp2 temp3
 ls -l
 ```
 
-</div>
-
 The second command moves the "temp1" file into the directory "temp". The "." (dot) at the end of the command retains the name of the file, whereas the third command renames the file "temp2" to "temp3".
 
 *(j)* ln 
@@ -248,8 +224,6 @@ ln -s temp/temp1 .
 ls -l 
 ```
 
-</div>
-
 ### File viewers
 
 *(a)* cat 
@@ -259,16 +233,12 @@ The concatenate command combines files (sequentially) and prints on the screen (
 cat SARS-CoV-2.fa
 ```
 
-</div>
-
 *(b)* more/less 
 These commands are used for viewing the content of the files; faster with large input files than text editors; not the entire file is read at the beginning.
 
 ```bash
 more SARS-CoV-2.fa
 ```
-
-</div>
 
 Press “Enter” to view lines further and “q” to quit the program
 
@@ -278,8 +248,6 @@ These commands show first/last 10 lines (default) respectively from a file.
 ```bash
 head SARS-CoV-2.fa
 ```
-
-</div>
 
 ### File editors
 
@@ -323,8 +291,6 @@ All Linux commands have manual pages. To access them, use “man” or “info�
 man ls
 ```
 
-</div>
-
 Please explore manual pages of all the above commands for available options. 
 
 ### Linux text processing
@@ -337,8 +303,6 @@ To cut a section of file use "-c" (characters)
 ```bash
 cut -c1-10 SARS-CoV-2.fa
 ```
-
-</div>
 
 The option "-c1-10" will output first 10 characters from the input file. 
 
@@ -355,15 +319,11 @@ We have a file named "human_viruses.txt" with some information including the nam
 head human_viruses.txt
 ```
 
-</div>
-
 To get a list of the GenBank id,
 
 ```bash
 cut -d "|" -f2 human_viruses.txt
 ```
-
-</div>
 
 *(b)* sort 
 The sort command is used to sort the input content.
@@ -380,8 +340,6 @@ Few options:
 ```bash
 sort -t "|" -nrk6 human_viruses.txt 
 ```
-
-</div>
 
 *(c)* grep 
 grep searches the input for a given pattern.
@@ -405,16 +363,12 @@ To get the list of all Hepatitis viruses from 'human_viruses.txt' file,
 grep "Hepatitis" human_viruses.txt
 ```
 
-</div>
-
 *(d)* wc 
 The command “wc” can be used in 2 ways, which counts lines, words or characters.
 
 ```bash
 wc -l outbreak.csv
 ```
-
-</div>
 
 ```bash
 cat outbreak.csv | wc -l
