@@ -27,7 +27,7 @@ To complete your analysis the key stages to consider are 1/ sequence alignment, 
 
 You can use the alignment software CLUSTALW by typing ‘clustalw2’ on the bioinformatics server Alpha2 <alpha2.cvr.gla.ac.uk>. Alternative alignment software you can try includes Muscle or Mafft (type ‘muscle’ or ‘mafft’ on the command line to see options). 
 
-To use PhyML for tree inference, type ‘phyml’ on the command line (or available online at http://www.atgc-montpellier.fr/phyml/). See PhyML’s online helpfile for further guidance on options: http://www.atgc-montpellier.fr/phyml/usersguide.php. Note, PhyML takes PHYLIP formatted alignments which can be generated with CLUSTALW. If you have problems with this file conversion there’s a PHYLIP .phy alignment files in the folder /home4/VBG_data/Phylogenetics. Alternative phylogenetic software to try includes RaXML and IQ-TREE (commands: 'raxml-ng-mpi'and 'iqtree2'). 
+To use PhyML for tree inference, type ‘phyml’ on the command line (or available online at http://www.atgc-montpellier.fr/phyml/). See PhyML’s online helpfile for further guidance on options: http://www.atgc-montpellier.fr/phyml/usersguide.php. Note, PhyML takes PHYLIP formatted alignments which can be generated with CLUSTALW. Alternative phylogenetic software to try includes RaXML and IQ-TREE (commands: 'raxml-ng-mpi'and 'iqtree2'). 
 
 FigTree (‘figtree’) is useful for visualizing phylogenetic trees and highlighting specific variants. 
 
@@ -37,10 +37,10 @@ Alignments, tree methods and visualization can also be carried out with graphica
 
 **Data**
 
-The data set from the Iyer paper is quite large (available at /home4/VBG_data/Phylogenetics on Alpha) so will take some time to align. You can use the fasta file with fewer sequences (95) from the linked patients CH595 and CH455 that were presented in their figure 1. Pre-computed CLUSTALW, MAFFT and MUSCLE multiple sequence alignments are also available in the directory alignments if needed. Copy files to your own directory.
+The data set from the Iyer paper is quite large (available at /home4/VBG_data/Phylogenetics on Alpha) so will take some time to align. You can use the fasta file with fewer sequences (95) from the linked patients CH595 and CH455 that were presented in their figure 1. **Copy files to your own directory.**
 
 
-**Once you’ve generated some trees answer the questions below:**
+Once you’ve generated some trees answer the questions below:
 
 **Question 1**. What can you infer from your evolutionary tree about the relationship of virus from the two individuals: CH596 and CH455? What two properties of the phylogenetic tree support this relationship?
 
