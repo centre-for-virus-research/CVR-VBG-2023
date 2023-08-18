@@ -110,7 +110,7 @@ Tab completion is a trick that normally reduces this risk significantly. Instead
 | PC          | A personal computer                                                                         |
 | Mac         | A Macintosh computer                                                                        |
 
-
+> __Note__:
 > ### Points to remember
 
 > Linux commands are case sensitive and are always single words \
