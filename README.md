@@ -35,7 +35,7 @@ Preference will be given to applicants who: (1) have some familiarity with HTS t
 
 ### [Timetable](https://drive.google.com/file/d/18wkXigU7Jx8VMeZsBAZ6OtmRVr1tn_NM/view?usp=share_link)
 
-### Hands-on Modules
+### Practical Modules
 1. [Basic Linux Commands](Introduction_to_Linux.md)
 2. [Read cleaning](ReadCleaning.md)
 3. [Reference Alignment](ReferenceAlignment.md)
