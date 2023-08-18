@@ -197,7 +197,7 @@ ls -l
 ```
 
 > [!WARNING]
-> > **To remove directories use "-r" option. Please remember once a file or directory is deleted, it will not go to "Recycle bin" in Linux and there is no way you can recover it.**
+> **To remove directories use "-r" option. Please remember once a file or directory is deleted, it will not go to "Recycle bin" in Linux and there is no way you can recover it.**
 
 *(h)* cp \
  Copies the content of the source file/directory to the target file/directory. To copy directories, use "-r" option.
