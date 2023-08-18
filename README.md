@@ -34,8 +34,8 @@ Preference will be given to applicants who: (1) have some familiarity with HTS t
 ### [Timetable](https://drive.google.com/file/d/18wkXigU7Jx8VMeZsBAZ6OtmRVr1tn_NM/view?usp=share_link)
 
 ### Practical Modules
-1. [Introduction to Linux](Introduction_to_Linux.md)
-2. [Read cleaning](ReadCleaning.md)
+1. [Introduction to Linux](docs/Introduction_to_Linux.md)
+2. [Read cleaning](data/ReadCleaning.md)
 3. [Reference Alignment](ReferenceAlignment.md)
 4. [Phylogenetics](Phylogenetics.md)
 5. [De novo assembly](DeNovoPracticals.md)
