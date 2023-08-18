@@ -1,0 +1,42 @@
+remote_theme: vaibhavvikas/jekyll-theme-minimalistic
+# title: CVR-VBG-2023
+# logo: /assets/img/logo.png
+url: //centre-for-virus-research.github.io
+baseurl: "/CVR-VBG-2023"
+color-scheme: light
+plugins:
+  - jekyll-remote-theme
+relative_links:
+  enabled: true
+  collections: true
+favicon: true
+
+navigation:
+  - name: About
+    link: ./docs/index.html
+  - name: Introduction to Linux
+    link: ./docs/Introduction_to_Linux.html
+  - name: Read Cleaning
+    link: ./data/ReadCleaning.html
+  - name: ReferenceAlignment
+    link: ./data/ReferenceAlignment.html
+  - name: Phylogenetics
+    link: ./data/Phylogenetics.html
+  - name: De Novo Practicals
+    link: ./data/DeNovoPracticals.html
+  - name: QualityAssessment
+    link: ./data/QualityAssessment.html
+  - name: Metagenomics
+    link: ./data/Metagenomics.html
+  - name: KmerMetagenomics
+    link: ./data/KmerMetagenomics.html
+  - name: Transcriptomics
+    link: ./data/Transcriptomics.html
+
+markdown: kramdown
+highlighter: rouge
+
+platforms:
+  - name: GitHub page of CVR
+    icon: <i class="fa-brands fa-github"></i>
+    link: https://github.com/centre-for-virus-research
