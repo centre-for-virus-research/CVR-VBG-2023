@@ -4,7 +4,7 @@ rank: 9
 ---
 
 # RNA-Seq Workshop
-## Quan Gu
+#### Quan Gu, MRC-University of Glasgow Centre for Virus Research, E-mail: quan.gu@glasgow.ac.uk 
 
 A classical RNA-Seq data processing pipeline contains the following steps:
 
@@ -156,11 +156,12 @@ We could also try **Reactome**
 (https://reactome.org), which is highly recommended. 
 The user guide of **Reactome** is here (https://reactome.org/userguide/analysis).
 
-Alternatively, you could directly run the Reactome R script I have made for you. Then you will get the output files: **gene.bubble.pdf**, **gene.SigReactome.xls**. The pdf file is the figure of the top 20 pathways enrichment of our significant DE genes. The xls file is the table of details of all the pathways (with P-value < 0.05) of our significant DE genes.  
+Alternatively, you could directly run the Reactome R script I have made for you. 
 
 ```
 cat DEG_edgeR.csv|sed 's/"//g'| awk 'NR>1' | cut -f1 -d',' > gene.glist
 Rscript /home4/VBG_data/RNASeq/Reactome.r hs gene.glist ./ 20
 ```
+Then you will get the output files: **gene.bubble.pdf**, **gene.SigReactome.xls**. The pdf file is the figure of the top 20 pathways enrichment of our significant DE genes. The xls file is the table of details of all the pathways (with P-value < 0.05) of our significant DE genes.  
 
 
