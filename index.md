@@ -26,12 +26,12 @@ Preference will be given to applicants who: (1) have some familiarity with HTS t
 
 ### Instructors
 
-[David Robertson](https://www.gla.ac.uk/schools/infectionimmunity/staff/davidrobertson/)
-[Derek Wright](https://www.gla.ac.uk/schools/infectionimmunity/staff/derekwright/)
-[Joseph Hughes](https://www.gla.ac.uk/schools/infectionimmunity/staff/josephhughes/) (Course Organizer)
-[Quan Gu](https://www.gla.ac.uk/schools/infectionimmunity/staff/quangu/)
-[Richard Orton](https://www.gla.ac.uk/schools/infectionimmunity/staff/richardorton/)
-[Sreenu Vattipally](https://www.gla.ac.uk/schools/infectionimmunity/staff/sreenuvattipally/)
+[David Robertson](https://www.gla.ac.uk/schools/infectionimmunity/staff/davidrobertson/) \
+[Derek Wright](https://www.gla.ac.uk/schools/infectionimmunity/staff/derekwright/) \
+[Joseph Hughes](https://www.gla.ac.uk/schools/infectionimmunity/staff/josephhughes/) (Course Organizer) \
+[Quan Gu](https://www.gla.ac.uk/schools/infectionimmunity/staff/quangu/) \
+[Richard Orton](https://www.gla.ac.uk/schools/infectionimmunity/staff/richardorton/) \
+[Sreenu Vattipally](https://www.gla.ac.uk/schools/infectionimmunity/staff/sreenuvattipally/) \
 [Srikeerthana Kuchi](https://www.gla.ac.uk/schools/infectionimmunity/staff/srikeerthanakuchi/) (Course Organizer)
 
 
