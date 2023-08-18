@@ -13,7 +13,7 @@ favicon: true
 
 navigation:
   - name: About
-    link: ./index.html
+    link: ./README.html
   - name: Introduction to Linux
     link: ./Introduction_to_Linux.html
   - name: Read Cleaning
