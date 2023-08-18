@@ -4,6 +4,9 @@ title: Introduction_to_Linux
 rank: 1
 ---
 
+# Introduction to Linux
+### Author: Srikeerthana Kuchi
+
 ```
 Command line shortcuts 
 
