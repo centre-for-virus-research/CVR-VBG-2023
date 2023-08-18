@@ -34,15 +34,15 @@ Preference will be given to applicants who: (1) have some familiarity with HTS t
 ### [Timetable](https://drive.google.com/file/d/18wkXigU7Jx8VMeZsBAZ6OtmRVr1tn_NM/view?usp=share_link)
 
 ### Practical Modules
-1. [Introduction to Linux](Introduction_to_Linux.md)
-2. [Read cleaning](ReadCleaning.md)
-3. [Reference Alignment](ReferenceAlignment.md)
-4. [Phylogenetics](Phylogenetics.md)
-5. [De novo assembly](DeNovoPracticals.md)
-6. [De novo quality assessment](QualityAssessment.md)
-7. [Metagenomics and virus discovery](Metagenomics.md)
-8. [K-mer based metagenomic profiling](KmerMetagenomics.md)
-9. [Introduction to Transcriptomics](Transcriptomics.md)
+1. [Introduction to Linux](docs/Introduction_to_Linux.md)
+2. [Read cleaning](docs/ReadCleaning.md)
+3. [Reference Alignment](docs/ReferenceAlignment.md)
+4. [Phylogenetics](docs/Phylogenetics.md)
+5. [De novo assembly](docs/DeNovoPracticals.md)
+6. [De novo quality assessment](docs/QualityAssessment.md)
+7. [Metagenomics and virus discovery](docs/Metagenomics.md)
+8. [K-mer based metagenomic profiling](docs/KmerMetagenomics.md)
+9. [Introduction to Transcriptomics](docs/Transcriptomics.md)
 
 
 
