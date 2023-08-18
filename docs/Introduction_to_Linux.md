@@ -365,7 +365,7 @@ Few options:
 To get the list of all Hepatitis viruses from 'human_viruses.txt' file,
 
 ```bash
-grep "Hepatitis" human_viruses.txt
+grep "Influenza D" human_viruses.txt
 ```
 
 *(d)* [wc](https://manpages.ubuntu.com/manpages/focal/en/man1/wc.1.html) \
