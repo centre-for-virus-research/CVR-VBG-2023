@@ -20,7 +20,7 @@ In this practical, we will assess four metagenomic assemblies (BL, OS, US and co
 > Documentation: <http://cab.cc.spbu.ru/quast/manual.html>
 ***
 
- 1) Create a folder called validation and create links for each contig file in `/home4/VBG_data/QualityAssessment/`: 
+1) Create a folder called validation and create links for each contig file in `/home4/VBG_data/QualityAssessment/`: 
 
 ```mkdir validation```
 
