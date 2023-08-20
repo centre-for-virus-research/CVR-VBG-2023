@@ -362,7 +362,7 @@ Few options:
 -w: word match 
 ```
 
-To get the list of all Hepatitis viruses from 'human_viruses.txt' file,
+To get the list of all Influenza D viruses from 'human_viruses.txt' file,
 
 ```bash
 grep "Influenza D" human_viruses.txt
