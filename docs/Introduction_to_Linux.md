@@ -166,7 +166,7 @@ cd Linux/
 ```
 
 *(d)* [mkdir](https://manpages.ubuntu.com/manpages/focal/en/man1/mkdir.1.html) \
-This command creates a directory in the current working directory if no file/directory exists with the specified name. 
+This command creates a directory in the current working directory if no directory exists with the specified name. 
 
 ```bash
 mkdir Practice
