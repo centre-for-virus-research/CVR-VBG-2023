@@ -158,7 +158,7 @@ cd Linux/
 pwd
 ```
 
-We are now in the directory "Exercises". Typing the command "cd .." changes it to the parent directory from which the previous command was typed in. Typing "cd" will change the current directory to the home directory.
+We are now in the directory "Linux". Typing the command "cd .." changes it to the parent directory from which the previous command was typed in. Typing "cd" will change the current directory to the home directory.
 
 ```bash
 cd
