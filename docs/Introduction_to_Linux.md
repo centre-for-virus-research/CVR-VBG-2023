@@ -29,7 +29,7 @@ Ctrl+u: Removes till the beginning
 
 ## Introduction
 
-[Linux](#info) is an open-source operating system [OS](#info) developed based on the kernel created by Linus Benedict Torvalds. In the last two decades, Linux has gained much popularity and now is being used on many platforms. Nowadays, most high-end servers to mobile phones (Android OS or iOS) run on different variants of Linux.
+[Linux](#info) is an open-source operating system ([OS](#info)) developed based on the kernel created by Linus Benedict Torvalds. In the last two decades, Linux has gained much popularity and now is being used on many platforms. Nowadays, most high-end servers to mobile phones (Android OS or iOS) run on different variants of Linux.
 
 Linux computers/servers are installed for multi-user usage. In this course, we will work on a high performance cluster machine running [Ubuntu](#info) server edition. Most of the commands specified in this manual can be used in any other distribution (i.e., CentOS, Debian, etc.) of Linux operating system. 
 
