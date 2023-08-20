@@ -457,7 +457,7 @@ This command kills the job with the process id 1234. As a user you can kill only
 3. How many fasta files are there in the directory?
 4. Extract all header lines from the file "all.fa".
 5. How many sequences are there in the file "all.fa"?
-6. Copy the file "outbreak.csv" file into "Exercises" directory.
+6. Copy the file "outbreak.csv" file from the "Linux" directory into "Exercises" directory.
 7. Get the list of countries that had at least two outbreaks in 2023.
 8. Find the 99th line of the file "NC_045512.2_gene_1.fa" using only the 'tail' and 'head' command.
 9. In the file "NC_078005.1_gene_1.fa", count the number of lines containing the sub-sequence "GGGG".
