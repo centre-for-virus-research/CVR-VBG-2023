@@ -47,7 +47,7 @@ The most common shells are:
 Bourne Shell \
 Bourne Again Shell – BASH (variant is Z Shell) \
 C Shell (variant is T Shell) \
-K Shell \
+K Shell 
 
 Among these Bourne Again Shell (BASH) is the most popular one. This is the default shell on the system, and we will be using it throughout this course. 
 
