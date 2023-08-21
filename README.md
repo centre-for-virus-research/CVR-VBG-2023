@@ -11,8 +11,8 @@ The 2023 course will introduce the participants to the UNIX OS and Bash scriptin
 
 ▪ HTS sequencing technologies: overview of the different HTS platforms and sample preparations \
 ▪ Unix OS: introduction to Unix OS and essential Bash scripting \
-▪ Reference assembly: aligning sequence reads to a known reference and visualization (e.g., bowtie2, BWA, Tanoti, Tablet, UGENE) \
-▪ Variant calling: consensus sequence generation, low frequency variant calling and error correction (e.g., samtools, LoFreq, DiversiTools) \
+▪ Reference assembly: aligning sequence reads to a known reference and visualization (e.g., bowtie2, BWA) \
+▪ Variant calling: consensus sequence generation, low frequency variant calling and error correction (e.g., samtools, LoFreq, iVar) \
 ▪ De-novo assembly: overlap layout and de Bruijn graphs approaches for sequence assembly, quality assessment and merging contigs (e.g., ABySS, SPAdes, MIRA, IDBA-UD, QUAST) \
 ▪ Metagenomic analyses:sanitizing sequence datasets, assembling, annotating, visualization (e.g., MetAMOS, Krona, DIAMOND, Kraken) \
 ▪ Genomics: scaffolding, improving and finishing the assembly, gene annotation (e.g., ICORN, Artemis, RATT) \
