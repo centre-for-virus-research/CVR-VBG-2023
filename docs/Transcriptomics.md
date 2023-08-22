@@ -145,7 +145,7 @@ Rscript /home4/VBG_data/RNASeq/edgeR.r
 
 Then you will get the output files: **DEG_edgeR.csv**, **cpm.csv** , **bcvplot.pdf**, **VolcanoPlot.png** and **mdsplot.pdf**. Check the output files and explore what they stand for.
 
-**Task**: how many DE genes? what is the cut-off of FDR P-value? what are the CPM values? how to explore the relationships among samples, and the top significant DE genes.
+**Task**: Check the output files. How many DE genes we have? what is the cut-off of FDR P-value? What are the CPM values? How to explore the relationships among samples, and the top significant DE genes?
 
 
 ### 6. Function annotation and pathway analysis ### 
@@ -155,7 +155,9 @@ One of the
 best-known tools is **David** (https://david.ncifcrf.gov/tools.jsp). 
 We could also try **Reactome**
 (https://reactome.org/PathwayBrowser/#TOOL=AT), which is highly recommended. 
-The user guide of **Reactome** is here (https://reactome.org/userguide/analysis). You could copy and paste the significant DE genes ID list from **DEG_edgeR.csv** and run analysis. Try to find top 20 pathways of our significant DE genes.
+The user guide of **Reactome** is here (https://reactome.org/userguide/analysis). You could copy and paste the significant DE genes ID list from **DEG_edgeR.csv** and run analysis. 
+
+**Task**: Try to find top 20 pathways of our significant DE genes.
 
 Alternatively, you could directly run the **Reactome** R script I have written for you. 
 
