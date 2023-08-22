@@ -342,7 +342,7 @@ For small RNA viruses, secondary and supplementary alignments tend to be rare, b
 
 ## 2.5: Coverage plots
 
-We previously used samtools to count the number of mapped and unmapped reads (using samtools view -c commands), now let’s explore the read mapping in more detail by creating a coverage plot using a tool called weeSAM: (https://github.com/centre-for-virus-research/weeSAM)[https://github.com/centre-for-virus-research/weeSAM]
+We previously used samtools to count the number of mapped and unmapped reads (using samtools view -c commands), now let’s explore the read mapping in more detail by creating a coverage plot using a tool called weeSAM: [https://github.com/centre-for-virus-research/weeSAM](https://github.com/centre-for-virus-research/weeSAM)
 
 weeSAM analyses a SAM or BAM file, generates a graphical coverage plot, and reports a range of summary statistics such as:
 
