@@ -62,7 +62,7 @@ fastqc *.fastq
 ```
 Check the reads quality from the output HTMl file of FASTQC. 
 
-After then we will do trimming after quality control. Trimming includes quality trimming and adapter trimming. In RNA-Seq, we normally do "gentle" trimming to remove the adapter. 
+After then we will do trimming after quality control. Trimming includes quality trimming and adapter trimming. In RNA-Seq, we normally do "gentle" trimming to remove the adapter (not to trim the reads too much).
 
 Several trimming programs exist: **Trim_galore**, **cutadapt** , **Prinseq**, **Trimmomatic**,etc.  
 In this workshop, we will use **Trim_galore** to trim the reads. 
@@ -88,7 +88,7 @@ genome='/home4/VBG_data/RNASeq/Human'
 hisat2 -x $genome --rna-strandness R -U IFNb01_trimmed.fq -S IFNb01.sam
 ```
 
-This has produced a SAM file. We need to generate the BAM files as well, which is the binary version of SAM files. 
+This has produced a SAM file. We need to generate the BAM files as well, which is the binary version of SAM files. After then you could remove the SAM files.
 
  ```
 samtools view -bh IFNb01.sam > IFNb01.bam
@@ -104,7 +104,7 @@ rm IFNb01.sam
 After getting your provided aligned BAM files, you can visualize the location of the mapped transcripts using visulization software such as: **IGV**, **Tablet**, **Ugene**, etc.
 
 ### 5.	Performing differential expression analysis ###
-In this workshop, we will use edgeR for the differential expression(DE). Here, we omit the step of transcriptome assembly as we don’t want to discover novel DE genes from those in our current genome.
+In this workshop, we will use **edgeR** for the differential expression(DE). Here, we omit the step of transcriptome assembly as we don’t want to discover novel DE genes from those in our current genome.
 There are two tools which can count the mapped transcripts in the genome. To learn more about how **featureCounts** and **htseq-count** compare, I have written a blog about it http://bioinformatics.cvr.ac.uk/blog/featurecounts-or-htseq-count/
 
 Here we use **featureCounts** to get the mapped raw counts of each gene in each sample.
@@ -144,7 +144,7 @@ Rscript /home4/VBG_data/RNASeq/edgeR.r
 ```
 
 Then you will get the output files: **DEG_edgeR.csv**, **cpm.csv** , **bcvplot.pdf**, **VolcanoPlot.png** and **mdsplot.pdf**. Check the output files and explore what they stand for.
-E.g. the cut-off of FDR P-value, the CPM values, the relationships among samples, and the top significant DE genes.
+**Task**: how many DE genes? what is the cut-off of FDR P-value? what are the CPM values? how to explore the relationships among samples, and the top significant DE genes.
 
 
 ### 6. Function annotation and pathway analysis ### 
