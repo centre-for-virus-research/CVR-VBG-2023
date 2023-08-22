@@ -135,7 +135,7 @@ I have written an Rscript called **edgeR** that has all the necessary commands. 
 more /home4/VBG_data/RNASeq/edgeR.r
 ```
 
-Here we use the classical mode of DE analysis in **edgeR**, which assumes all replicates within group are equal.
+Here we use the classical mode of differential expression (DE) analysis in **edgeR**, which assumes all replicates within group are equal.
 
 You can simply type this command line :
 
@@ -151,12 +151,12 @@ E.g. the cut-off of FDR P-value, the CPM values, the relationships among samples
 Once we get the differential expression gene list, the next step is to annotate them and
 analyse their function and pathways. There are many free online tools available. 
 One of the
-best-known tools is **David** (https://david.ncifcrf.gov). 
+best-known tools is **David** (https://david.ncifcrf.gov/tools.jsp). 
 We could also try **Reactome**
-(https://reactome.org), which is highly recommended. 
-The user guide of **Reactome** is here (https://reactome.org/userguide/analysis).
+(https://reactome.org/PathwayBrowser/#TOOL=AT), which is highly recommended. 
+The user guide of **Reactome** is here (https://reactome.org/userguide/analysis). You could copy and paste the significant DE genes ID list from **DEG_edgeR.csv** and run analysis. Try to find top 20 pathways of our significant DE genes.
 
-Alternatively, you could directly run the Reactome R script I have made for you. 
+Alternatively, you could directly run the **Reactome** R script I have written for you. 
 
 ```
 cat DEG_edgeR.csv|sed 's/"//g'| awk 'NR>1' | cut -f1 -d',' > gene.glist
