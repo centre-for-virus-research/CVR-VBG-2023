@@ -137,13 +137,14 @@ more /home4/VBG_data/RNASeq/edgeR.r
 
 Here we use the classical mode of DE analysis in **edgeR**, which assumes all replicates within group are equal.
 
-You can copy and paste the content from **edgeR.r** into **R** after opening R with the command ```R```, or you can simply type from the command line:
+You can simply type this command line :
 
 ```
 Rscript /home4/VBG_data/RNASeq/edgeR.r
 ```
 
-Then you will get the output files: **DEG_edgeR.csv**, **cpm.csv** , **bcvplot.pdf**, **VolcanoPlot.png** and **mdsplot.pdf**.
+Then you will get the output files: **DEG_edgeR.csv**, **cpm.csv** , **bcvplot.pdf**, **VolcanoPlot.png** and **mdsplot.pdf**. Check the output files and explore what they stand for.
+E.g. the cut-off of FDR P-value, the CPM values, the relationships among samples, and the top significant DE genes.
 
 
 ### 6. Function annotation and pathway analysis ### 
