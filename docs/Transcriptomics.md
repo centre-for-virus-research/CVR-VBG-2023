@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Transcriptomics 
 rank: 9
 ---
 
@@ -57,13 +58,11 @@ ln -s /home4/VBG_data/RNASeq/Homo_sapiens.GRCh38.107.gtf
 The first step of RNA-Seq analysis is Quality control. 
 Before we start the analysis, it is always good inspect the quality of the samples. Here we use **FastQC** to visualize the quality of the sequences. To begin, simply run:
 ```
-fastqc 
+fastqc *.fastq
 ```
-The software use from the terminal will bring up a GUI window for you on your desktop.  Load a sample from the GUI.
+Check the reads quality from the output HTMl file of FASTQC. 
 
-**File -> Open -> IFNb01.fastq**
-
-We could do trimming after quality control. Trimming includes quality trimming and adapter trimming.
+After then we will do trimming after quality control. Trimming includes quality trimming and adapter trimming. In RNA-Seq, we normally do "gentle" trimming to remove the adapter. 
 
 Several trimming programs exist: **Trim_galore**, **cutadapt** , **Prinseq**, **Trimmomatic**,etc.  
 In this workshop, we will use **Trim_galore** to trim the reads. 
