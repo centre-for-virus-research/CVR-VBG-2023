@@ -118,7 +118,7 @@ rm temp.txt
 
 ```
 
-In this course, we don't have enough time to make all the count table by ourselves. However, we can use the overall counts file that I have prepared for you.
+In this course, we don't have enough time to make the count table for all the samples. by ourselves. However, we can use the overall count table that I have prepared for you, which is based on the real data.
 
 Please copy the count file **DE1input.txt** into your own directory. 
 
