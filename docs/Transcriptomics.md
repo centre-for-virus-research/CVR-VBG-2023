@@ -144,6 +144,7 @@ Rscript /home4/VBG_data/RNASeq/edgeR.r
 ```
 
 Then you will get the output files: **DEG_edgeR.csv**, **cpm.csv** , **bcvplot.pdf**, **VolcanoPlot.png** and **mdsplot.pdf**. Check the output files and explore what they stand for.
+
 **Task**: how many DE genes? what is the cut-off of FDR P-value? what are the CPM values? how to explore the relationships among samples, and the top significant DE genes.
 
 
