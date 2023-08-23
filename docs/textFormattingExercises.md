@@ -21,3 +21,15 @@
 5. `paste - - - - < file.fq |sed s/^@/\>/|cut -f 1,2|sed s/\\t/\\n/g` or `grep -A 1 "^@" file.fq |sed s/@/\>/g|grep -v -- --`
 6. `grep -B 1 GAATTC file.fq |sed s/@/\>/g|grep -v -- --`
 
+## Exercises for BASH scripting.
+
+1. Write a script to convert a fastq file to a fasta file.
+2. Write a script to print the sequence header and sequence length from a multi-fasta file
+3. Print reverse complement of a multi-fasta sequence file
+4. Write a reference mapping pipeline.
+  - Take the input fastq and reference from the command line.
+  - Clean the reads using trim_galore
+  - Index the reference sequence with the bwa index
+  - Map the reads to reference using bwa mem.
+  - Convert bam to consensus file.
+  - Get the mapping statistics
