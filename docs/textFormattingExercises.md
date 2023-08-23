@@ -23,9 +23,12 @@
 
 ## Exercises for BASH scripting.
 
-1. Write a script to convert a fastq file to a fasta file.
-2. Write a script to print the sequence header and sequence length from a multi-fasta file
-3. Print reverse complement of a multi-fasta sequence file
+`cp -R /home3/bvv2t/bashExp-2 ~/.`
+
+
+1. Write a script to convert a fastq file to a fasta file (Use file.fq).
+2. Write a script to print the sequence header and sequence length from a multi-fasta file (use refGenomes.fa)
+3. Print reverse complement of a multi-fasta sequence file (use refGenomes.fa)
 4. Write a reference mapping pipeline (Use reference alignment input files from earlier sessions).
   - Take the input fastq and reference from the command line.
   - Clean the reads using trim_galore
