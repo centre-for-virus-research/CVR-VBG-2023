@@ -36,3 +36,62 @@
   - Map the reads to reference using bwa mem.
   - Convert bam to consensus file.
   - Get the mapping statistics
+
+
+### Answers.
+### Convert FastQ to FastA
+```
+ind=1;
+while read line
+do
+    if [ $((ind%4)) -eq 1 ]]; then
+    echo $line | sed s/^@/\>/g
+    elif [[ $((ind%4)) -eq 2 ]; then 
+    echo $line
+    fi
+    let idx++
+done < $1
+```
+
+### Print Genome name and size
+```
+exec < $1
+while read line
+do
+        if [[ ${line:0:1} != ">" ]];
+        then
+                genome=$genome$line;
+        else
+                # Do not print first name 
+                if [[ -n $name ]]; then echo $name ${#genome}; fi
+                name=$line;
+                genome="";
+        fi
+done
+# Print last name 
+echo $name ${#genome};
+```
+
+### Print reverse complementary sequence
+```
+while read line
+do
+        if [[ ${line:0:1} != ">" ]];
+        then
+                genome=$genome$line;
+    else
+
+# Do not print first name. -n is TRUE is the length of the string is non-zero
+        if [[ -n $name ]]; then 
+            echo $name
+            echo $genome|rev|tr '[ATGC]' '[TACG]'|fold -w 70
+        fi
+        name=$line;
+        genome="";
+        fi
+done < $1
+
+# Print last name 
+echo $name
+echo $genome|rev|tr '[ATGC]' '[TACG]'|fold -w 70
+```
