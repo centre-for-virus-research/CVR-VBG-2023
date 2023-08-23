@@ -26,7 +26,7 @@
 1. Write a script to convert a fastq file to a fasta file.
 2. Write a script to print the sequence header and sequence length from a multi-fasta file
 3. Print reverse complement of a multi-fasta sequence file
-4. Write a reference mapping pipeline.
+4. Write a reference mapping pipeline (Use reference alignment input files from earlier sessions).
   - Take the input fastq and reference from the command line.
   - Clean the reads using trim_galore
   - Index the reference sequence with the bwa index
