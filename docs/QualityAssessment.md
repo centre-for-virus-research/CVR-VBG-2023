@@ -34,7 +34,7 @@ In this practical, we will assess four metagenomic assemblies (BL, OS, US and co
 
 ```firefox /path/to/report.html```
 
-__*Which sample provided the best assembly? Why metrics supports this? Why doesn’t the “all_samples” assembly have the largest genome?*__
+__*Which sample provided the best assembly? Which metrics supports this? Why doesn’t the “all_samples” assembly have the largest genome?*__
 
 
 <br/><br/>
@@ -67,7 +67,7 @@ __*Do you see a difference to the previous file? What additional metrics and vis
 
 8) Try to run the metaQuast on the sample 00094 using the Lasavirus sequences as a reference with the `-R`.
 
-Are there any error/warning messages during the run? Does the output look any different? What do you think is happening with this sample?
+__*Are there any error/warning messages during the run? Does the output look any different? What do you think is happening with this sample?*__
 
 We will investigate in the metagenomic parctical what is going on with this sample.
 
