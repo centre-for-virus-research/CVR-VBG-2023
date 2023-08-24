@@ -121,7 +121,7 @@ rm temp.txt
 
 In this course, we don't have enough time to make the count table for all the samples. by ourselves. However, we can use the overall count table that I have prepared for you, which is based on the real data.
 
-Please copy the overall count file **DE1input.txt** into your own directory. 
+Please copy the overall count table file **DE1input.txt** into your own directory. 
 
 ```
 cp /home4/VBG_data/RNASeq/DE1input.txt  . 
@@ -172,10 +172,10 @@ Then you will get the output files: **gene.bubble.pdf**, **gene.SigReactome.xls*
 Could you use any of visulization tools to visualize your aligned SAM/BAM file?
 
 **Bonus 2**:
-After reading my blog, do you think **htseq** could do features count as well? If yes, could you please write your own command for it? (The manual of HTSeq: https://htseq.readthedocs.io/en/release_0.11.1/count.html)
+After reading my blog, do you think **htseq** could do counts table as well? If yes, could you please write your own command for doing it? (The manual of HTSeq: https://htseq.readthedocs.io/en/release_0.11.1/count.html)
 
 **Bonus 3**:
-You have done trimming, references alignment and features count for the sample **IFNb01.fastq**, could you please also run same steps on five other samples? You could do it by command line, but we prefer to write it with a bash script (e.g. Loop, or Input arguments) to do it.
+You have done trimming, references alignment, and features count for the sample **IFNb01.fastq**, could you please also run the same steps on five other samples? You could still do it by command line, but it is better to write it with a BASH script (e.g. by loop, or input arguments).
 
 
 
