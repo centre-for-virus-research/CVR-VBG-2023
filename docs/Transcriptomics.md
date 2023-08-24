@@ -51,7 +51,7 @@ ln -s /home4/VBG_data/RNASeq/Human
 ln -s /home4/VBG_data/RNASeq/Homo_sapiens.GRCh38.107.gtf
 ```
 
-**Task 1**: Have a look at the human reference genome (GRCh38) and its annotation files, and print the last 50 lines of these files. 
+**Task 1**: Check the human reference genome (GRCh38) and its annotation files, and print the last 50 lines of these files. 
 
 ###  2. Quality control ### 
 
@@ -99,7 +99,7 @@ samtools index IFNb01_sorted.bam
 
 rm IFNb01.sam
 ```
-**Task 3**: What is the mapping rate of this sample? Is it a high rate?
+**Task 3**: What is the mapping rate against the human genome of this sample? Is it a high rate?
 
 ### 4.	Visualizing reads and transcript structures ### 
 After getting your provided aligned BAM files, you can visualize the location of the mapped transcripts using visulization software such as: **IGV**, **Tablet**, **Ugene**, etc.
@@ -146,8 +146,7 @@ Rscript /home4/VBG_data/RNASeq/edgeR.r
 
 Then you will get the output files: **DEG_edgeR.csv**, **cpm.csv** , **bcvplot.pdf**, **VolcanoPlot.png** and **mdsplot.pdf**. Check the output files and explore what they stand for.
 
-**Task 4**: After running edgeR code, please check the output files. How many DE genes we have? what is the cut-off of FDR P-value? What are the CPM values? How to explore the relationships among samples, and the top significant DE genes?
-
+**Task 4**: After running the edgeR code, please check the output files.  How to explore the relationships among samples? How many DE genes do we have? What is the cut-off of the FDR P-value? What are the CPM values?
 
 ### 6. Function annotation and pathway analysis ### 
 Once we get the differential expression gene list, the next step is to annotate them and
@@ -158,7 +157,7 @@ We could also try **Reactome**
 (https://reactome.org/PathwayBrowser/#TOOL=AT), which is highly recommended. 
 The user guide of **Reactome** is here (https://reactome.org/userguide/analysis). You could copy and paste the significant DE genes ID list from **DEG_edgeR.csv** and run analysis. 
 
-**Task 5**: Try to find top 20 pathways of our significant DE genes. Is there a big difference between the results from DAVID and REACTOME?
+**Task 5**: Try to find the top 20 pathways of our significant DE genes. Is there a big difference between the results from DAVID and REACTOME?
 
 Alternatively, you could directly run the **Reactome** R script I have written for you. 
 
@@ -168,13 +167,13 @@ Rscript /home4/VBG_data/RNASeq/Reactome.r hs gene.glist ./ 20
 ```
 Then you will get the output files: **gene.bubble.pdf**, **gene.SigReactome.xls**. The pdf file is the figure of the top 20 pathways enrichment of our significant DE genes. The xls file is the table of details of all the pathways (with P-value < 0.05) of our significant DE genes.  
 
-Here we have some bonus questions, please DIY.
+Here we have some bonus questions:
 
 **Bonus 1**:
 Could you use any of visulization tools to visualize your aligned SAM/BAM file?
 
 **Bonus 2**:
-After reading my blog, do you think **htseq** could do counts table as well? If yes, could you please write your own command for doing it? (The manual of HTSeq: https://htseq.readthedocs.io/en/release_0.11.1/count.html)
+After reading my blog, do you think **htseq** could do a counts table as well? If yes, could you please write your own command for doing it? (The manual of HTSeq: https://htseq.readthedocs.io/en/release_0.11.1/count.html)
 
 **Bonus 3**:
 You have done trimming, references alignment, and features count for the sample **IFNb01.fastq**, could you please also run the same steps on five other samples? You could still do it by command line, but it is better to write it with a BASH script (e.g. by loop, or input arguments).
