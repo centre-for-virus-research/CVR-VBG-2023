@@ -80,7 +80,7 @@ trim_galore IFNb01.fastq >/dev/null 2>&1
 ###  3.	Mapping RNA-Seq reads against a reference genome ###  
 
 The next step is to align reads to the genome. The mapping output are BAM files which is a binary version of a SAM file. A SAM file (.sam) is a tab-delimited text file that contains sequence alignment data. This step is most time-consuming step.
-In this workshop, we will use **Hisat2** to map the reads to the reference genome, which is a mapping program specifically developed for RNA-Seq analysis.  When doing this at home, remember to build the **Hisat2** index before you run the mapping, which I have already done for you. I have already done this for you and you can use it with the following command:
+In this workshop, we will use **Hisat2** to map the reads to the reference genome, which is a mapping program specifically developed for RNA-Seq analysis.  When doing this at home, remember to build the **Hisat2** index before you run the mapping, which I have already done for you.Now you can use it with the following Hisat2 command with the default setting:
 
 ```
 genome='/home4/VBG_data/RNASeq/Human'
@@ -172,7 +172,7 @@ Then you will get the output files: **gene.bubble.pdf**, **gene.SigReactome.xls*
 Could you use any of visulization tools to visualize your aligned SAM/BAM file?
 
 **Bonus2**:
-You have done trimming and references alignment for the sample **IFNb01.fastq**, could you please also run trimming and references alignment on five other samples? You could do it by command line, but we prefer to write it with a bash script (e.g. Loop, or Input arguments) to do it.
+You have done trimming, references alignment and features count for the sample **IFNb01.fastq**, could you please also run same steps on five other samples? You could do it by command line, but we prefer to write it with a bash script (e.g. Loop, or Input arguments) to do it.
 
 **Bonus3**:
 Based on the overall counts table. If we ONLY want to represent the up-regulated DEGs, how could we do it? Is it a big difference between the pathway results between All DEGs and up-regulated DEGs?
