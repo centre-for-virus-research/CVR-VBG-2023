@@ -106,7 +106,7 @@ After getting your provided aligned BAM files, you can visualize the location of
 
 ### 5.	Performing differential expression analysis ###
 In this workshop, we will use **edgeR** for the differential expression(DE). Here, we omit the step of transcriptome assembly as we don’t want to discover novel DE genes from those in our current genome.
-There are two tools which can count the mapped transcripts in the genome. To learn more about how **featureCounts** and **htseq-count** compare, I have written a blog about it http://bioinformatics.cvr.ac.uk/blog/featurecounts-or-htseq-count/
+There are two well-known tools which can count the mapped transcripts in the genome. To learn more about how **featureCounts** and **htseq** compare, I have written a blog about it http://bioinformatics.cvr.ac.uk/blog/featurecounts-or-htseq-count/
 
 Here we use **featureCounts** to get the mapped raw counts of each gene in each sample.
 
@@ -172,7 +172,7 @@ Then you will get the output files: **gene.bubble.pdf**, **gene.SigReactome.xls*
 Could you use any of visulization tools to visualize your aligned SAM/BAM file?
 
 **Bonus 2**:
-After reading my blog, do you think you could run **HTSeq** to do features count? If yes, could you please write your own command for it? (https://htseq.readthedocs.io/en/release_0.11.1/count.html)
+After reading my blog, do you think **htseq** could do features count as well? If yes, could you please write your own command for it? (The manual of HTSeq: https://htseq.readthedocs.io/en/release_0.11.1/count.html)
 
 **Bonus 3**:
 You have done trimming, references alignment and features count for the sample **IFNb01.fastq**, could you please also run same steps on five other samples? You could do it by command line, but we prefer to write it with a bash script (e.g. Loop, or Input arguments) to do it.
