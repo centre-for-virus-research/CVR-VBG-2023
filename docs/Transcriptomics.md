@@ -44,7 +44,7 @@ Step 2: Generate a soft link to the files, here is an example for one file:
 ln -s /home4/VBG_data/RNASeq/IFNb01.fastq
 ```
 
-We need to make soft links to the reference genome file as well.
+We need to make soft links to the reference genome file as well. I have downloaded the genome and GTF files. We could go to RefSeq, Ensembl or UCSC website to download the latest version of the human genome (GRCh38/hg38).
 
 ```
 ln -s /home4/VBG_data/RNASeq/Human
@@ -169,11 +169,12 @@ Then you will get the output files: **gene.bubble.pdf**, **gene.SigReactome.xls*
 
 Here we have some bonus questions:
 
+
 **Bonus 1**:
-Could you use any of visulization tools to visualize your aligned SAM/BAM file?
+Could you use any of visulization tools (**IGV**, **Ugene**, **Tablet**, etc.) to visualize your aligned SAM/BAM file?
 
 **Bonus 2**:
-After reading my blog, do you think **htseq** could do a counts table as well? If yes, could you please write your own command for doing it? (The manual of HTSeq: https://htseq.readthedocs.io/en/release_0.11.1/count.html)
+After reading my blog, do you think **htseq** could do a counts table as well? If yes, could you please write your own command for doing it? (The manual of HTSeq: https://htseq.readthedocs.io/en/release_0.11.1/count.html. Be aware of strand-specific settings!)
 
 **Bonus 3**:
 You have done trimming, references alignment, and features count for the sample **IFNb01.fastq**, could you please also run the same steps on five other samples? You could still do it by command line, but it is better to write it with a BASH script (e.g. by loop, or input arguments).
