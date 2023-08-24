@@ -158,7 +158,7 @@ We could also try **Reactome**
 (https://reactome.org/PathwayBrowser/#TOOL=AT), which is highly recommended. 
 The user guide of **Reactome** is here (https://reactome.org/userguide/analysis). You could copy and paste the significant DE genes ID list from **DEG_edgeR.csv** and run analysis. 
 
-**Task 5**: Try to find top 20 pathways of our significant DE genes. Is it a big difference between the results from DAVID and REACTOME?
+**Task 5**: Try to find top 20 pathways of our significant DE genes. Is there a big difference between the results from DAVID and REACTOME?
 
 Alternatively, you could directly run the **Reactome** R script I have written for you. 
 
@@ -175,7 +175,7 @@ Could you use any of visulization tools to visualize your aligned SAM/BAM file?
 You have done trimming, references alignment and features count for the sample **IFNb01.fastq**, could you please also run same steps on five other samples? You could do it by command line, but we prefer to write it with a bash script (e.g. Loop, or Input arguments) to do it.
 
 **Bonus 3**:
-Based on the overall counts table. If we ONLY want to represent the up-regulated DEGs, how could we do it? Is it a big difference between the pathway results between All DEGs and up-regulated DEGs?
+Based on the overall counts table. If we ONLY want to represent the up-regulated DEGs, how could we do it? Is there a big difference between the pathway results from All DEGs and up-regulated DEGs only?
 
 
 
