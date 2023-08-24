@@ -136,7 +136,7 @@ I have written an Rscript called **edgeR** that has all the necessary commands. 
 more /home4/VBG_data/RNASeq/edgeR.r
 ```
 
-Here we use the classical mode of differential expression (DE) analysis in **edgeR**, which assumes all replicates within group are equal.
+Here we use the classical mode of differential expression (DE) analysis in **edgeR**, which assumes all replicates within group are equal. The cut-off the DEGs is Adjust P-value (i.e. Q-value) < 0.05.
 
 You can simply type this command line :
 
@@ -172,10 +172,10 @@ Then you will get the output files: **gene.bubble.pdf**, **gene.SigReactome.xls*
 Could you use any of visulization softwareto visualize your BAM file?
 
 **Bonus2**:
-You have got the alignment file of **IFNb01.fastq**, could you please run mapping on other five other samples? You could do it by command line, or we prefer to write a bash script (e.g. Loop) to do it.
+You have done trimming and references alignment for the sample **IFNb01.fastq**, could you please also run trimming and references alignment on five other samples? You could do it by command line, but we prefer to write it with a bash script (e.g. Loop, or Input arguments) to do it.
 
 **Bonus3**:
-If we only need to analysis up-regulated DEGs. How could we do it? Is it a big difference between the pathway results between All DEGs and up-regulated DEGs?
+Based on the overall counts table. If we ONLY want to represent the up-regulated DEGs, how could we do it? Is it a big difference between the pathway results between All DEGs and up-regulated DEGs?
 
 
 
