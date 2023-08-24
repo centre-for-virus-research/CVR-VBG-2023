@@ -68,7 +68,7 @@ Several trimming programs exist: **Trim_galore**, **cutadapt** , **Prinseq**, **
 In this workshop, we will use **Trim_galore** to trim the reads. 
 Note: the default adapter sequence of Illumina and Proton sequencing platforms are different.
 
-The following command will trim with default settings:
+The following command will trim with default settings of **Trim_galore**:
 
 ```
 trim_galore IFNb01.fastq >/dev/null 2>&1
@@ -120,7 +120,7 @@ rm temp.txt
 
 In this course, we don't have enough time to make the count table for all the samples. by ourselves. However, we can use the overall count table that I have prepared for you, which is based on the real data.
 
-Please copy the count file **DE1input.txt** into your own directory. 
+Please copy the overall count file **DE1input.txt** into your own directory. 
 
 ```
 cp /home4/VBG_data/RNASeq/DE1input.txt  . 
@@ -145,7 +145,7 @@ Rscript /home4/VBG_data/RNASeq/edgeR.r
 
 Then you will get the output files: **DEG_edgeR.csv**, **cpm.csv** , **bcvplot.pdf**, **VolcanoPlot.png** and **mdsplot.pdf**. Check the output files and explore what they stand for.
 
-**Task**: Check the output files. How many DE genes we have? what is the cut-off of FDR P-value? What are the CPM values? How to explore the relationships among samples, and the top significant DE genes?
+**Task**: After running edgeR code, please check the output files. How many DE genes we have? what is the cut-off of FDR P-value? What are the CPM values? How to explore the relationships among samples, and the top significant DE genes?
 
 
 ### 6. Function annotation and pathway analysis ### 
@@ -157,7 +157,7 @@ We could also try **Reactome**
 (https://reactome.org/PathwayBrowser/#TOOL=AT), which is highly recommended. 
 The user guide of **Reactome** is here (https://reactome.org/userguide/analysis). You could copy and paste the significant DE genes ID list from **DEG_edgeR.csv** and run analysis. 
 
-**Task**: Try to find top 20 pathways of our significant DE genes.
+**Task**: Try to find top 20 pathways of our significant DE genes. Is it a big difference between the results from DAVID and REACTOME?
 
 Alternatively, you could directly run the **Reactome** R script I have written for you. 
 
@@ -166,5 +166,13 @@ cat DEG_edgeR.csv|sed 's/"//g'| awk 'NR>1' | cut -f1 -d',' > gene.glist
 Rscript /home4/VBG_data/RNASeq/Reactome.r hs gene.glist ./ 20
 ```
 Then you will get the output files: **gene.bubble.pdf**, **gene.SigReactome.xls**. The pdf file is the figure of the top 20 pathways enrichment of our significant DE genes. The xls file is the table of details of all the pathways (with P-value < 0.05) of our significant DE genes.  
+
+**Bonus1**:
+Could you use any of visulization softwareto visualize your BAM file?
+**Bonus2**:
+You have got the alignment file of **IFNb01.fastq**, could you please run mapping on other five other samples? You could do it by command line, or we prefer to write a bash script (e.g. Loop) to do it.
+**Bonus3**:
+If we only need to analysis up-regulated DEGs. How could we do it? Is it a big difference between the pathway results between All DEGs and up-regulated DEGs?
+
 
 
