@@ -99,6 +99,7 @@ samtools index IFNb01_sorted.bam
 
 rm IFNb01.sam
 ```
+**Task**: What is the mapping rate of this sample? Is it high?
 
 ### 4.	Visualizing reads and transcript structures ### 
 After getting your provided aligned BAM files, you can visualize the location of the mapped transcripts using visulization software such as: **IGV**, **Tablet**, **Ugene**, etc.
@@ -169,8 +170,10 @@ Then you will get the output files: **gene.bubble.pdf**, **gene.SigReactome.xls*
 
 **Bonus1**:
 Could you use any of visulization softwareto visualize your BAM file?
+
 **Bonus2**:
 You have got the alignment file of **IFNb01.fastq**, could you please run mapping on other five other samples? You could do it by command line, or we prefer to write a bash script (e.g. Loop) to do it.
+
 **Bonus3**:
 If we only need to analysis up-regulated DEGs. How could we do it? Is it a big difference between the pathway results between All DEGs and up-regulated DEGs?
 
