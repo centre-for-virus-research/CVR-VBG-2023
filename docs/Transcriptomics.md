@@ -62,7 +62,7 @@ fastqc *.fastq
 ```
 Check the reads quality from the output HTMl file of FASTQC. 
 
-Before running the RNA-Seq pipeline, we could also check the contamination of the samples. We could use **Kraken** to check the proportion of reads mapped to bacterial or viral genomes. In this workshop, we could ignore this step. After then we will do trimming after quality control. Trimming includes quality trimming and adapter trimming. In RNA-Seq, we normally do "gentle" trimming to remove the adapter (not to trim the reads too much).
+Before running the RNA-Seq pipeline, we could check the contamination of the samples. We could use **Kraken** and **Kronaplot** to explore the proportion of reads mapped to bacterial or viral genomes. In this workshop, we will ignore this step. After then we will do trimming after quality control. Trimming includes quality trimming and adapter trimming. In RNA-Seq, we normally do "gentle" trimming to remove the adapter (not to trim the reads too much).
 
 Several trimming programs exist: **Trim_galore**, **cutadapt** , **Prinseq**, **Trimmomatic**,etc.  
 In this workshop, we will use **Trim_galore** to trim the reads. 
