@@ -169,7 +169,7 @@ Rscript /home4/VBG_data/RNASeq/Reactome.r hs gene.glist ./ 20
 Then you will get the output files: **gene.bubble.pdf**, **gene.SigReactome.xls**. The pdf file is the figure of the top 20 pathways enrichment of our significant DE genes. The xls file is the table of details of all the pathways (with P-value < 0.05) of our significant DE genes.  
 
 **Bonus1**:
-Could you use any of visulization softwareto visualize your BAM file?
+Could you use any of visulization tools to visualize your aligned SAM/BAM file?
 
 **Bonus2**:
 You have done trimming and references alignment for the sample **IFNb01.fastq**, could you please also run trimming and references alignment on five other samples? You could do it by command line, but we prefer to write it with a bash script (e.g. Loop, or Input arguments) to do it.
