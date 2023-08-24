@@ -172,10 +172,10 @@ Then you will get the output files: **gene.bubble.pdf**, **gene.SigReactome.xls*
 Could you use any of visulization tools to visualize your aligned SAM/BAM file?
 
 **Bonus 2**:
-You have done trimming, references alignment and features count for the sample **IFNb01.fastq**, could you please also run same steps on five other samples? You could do it by command line, but we prefer to write it with a bash script (e.g. Loop, or Input arguments) to do it.
+After reading my blog, do you think you could run **HTSeq** to do features count? If yes, could you please write your own command for it? (https://htseq.readthedocs.io/en/release_0.11.1/count.html)
 
 **Bonus 3**:
-Based on the overall counts table. If we ONLY want to represent the up-regulated DEGs, how could we do it? Is there a big difference between the pathway results from All DEGs and up-regulated DEGs only?
+You have done trimming, references alignment and features count for the sample **IFNb01.fastq**, could you please also run same steps on five other samples? You could do it by command line, but we prefer to write it with a bash script (e.g. Loop, or Input arguments) to do it.
 
 
 
