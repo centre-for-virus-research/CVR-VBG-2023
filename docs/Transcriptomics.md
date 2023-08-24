@@ -80,7 +80,7 @@ trim_galore IFNb01.fastq >/dev/null 2>&1
 ###  3.	Mapping RNA-Seq reads against a reference genome ###  
 
 The next step is to align reads to the genome. The mapping output are BAM files which is a binary version of a SAM file. A SAM file (.sam) is a tab-delimited text file that contains sequence alignment data. This step is most time-consuming step.
-In this workshop, we will use **Hisat2** to map the reads to the reference genome, which is a mapping program specifically developed for RNA-Seq analysis.  When doing this at home, remember to build the **Hisat2** index before you run the mapping, which I have already done for you. Now you can use it with the following **Hisat2** command with the default setting:
+In this workshop, we will use **Hisat2** to map the reads to the reference genome, which is a mapping program specifically developed for RNA-Seq analysis.  When doing this at home, remember to build the **Hisat2** index before you run the mapping, which I have already done for you. Now you could directly run the following **Hisat2** command with its default setting:
 
 ```
 genome='/home4/VBG_data/RNASeq/Human'
