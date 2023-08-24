@@ -51,7 +51,7 @@ ln -s /home4/VBG_data/RNASeq/Human
 ln -s /home4/VBG_data/RNASeq/Homo_sapiens.GRCh38.107.gtf
 ```
 
-**Task**: Have a look at the human reference genome (GRCh38) and its annotation files, and print the last 50 lines of these files. 
+**Task 1**: Have a look at the human reference genome (GRCh38) and its annotation files, and print the last 50 lines of these files. 
 
 ###  2. Quality control ### 
 
@@ -74,13 +74,13 @@ The following command will trim with default settings of **Trim_galore**:
 trim_galore IFNb01.fastq >/dev/null 2>&1
 ```
 
-**Task**: Check the difference between raw data and trimmed data by (1) file size, (2) read number and (3) read quality.
+**Task 2**: Check the difference between raw data and trimmed data by (1) file size, (2) read number and (3) read quality.
 
 
 ###  3.	Mapping RNA-Seq reads against a reference genome ###  
 
 The next step is to align reads to the genome. The mapping output are BAM files which is a binary version of a SAM file. A SAM file (.sam) is a tab-delimited text file that contains sequence alignment data. This step is most time-consuming step.
-In this workshop, we will use **Hisat2** to map the reads to the reference genome, which is a mapping program specifically developed for RNA-Seq analysis.  When doing this at home, remember to build the **Hisat2** index before you run the mapping, which I have already done for you.Now you can use it with the following Hisat2 command with the default setting:
+In this workshop, we will use **Hisat2** to map the reads to the reference genome, which is a mapping program specifically developed for RNA-Seq analysis.  When doing this at home, remember to build the **Hisat2** index before you run the mapping, which I have already done for you. Now you can use it with the following **Hisat2** command with the default setting:
 
 ```
 genome='/home4/VBG_data/RNASeq/Human'
@@ -88,7 +88,7 @@ genome='/home4/VBG_data/RNASeq/Human'
 hisat2 -x $genome --rna-strandness R -U IFNb01_trimmed.fq -S IFNb01.sam
 ```
 
-This has produced a SAM file. We need to generate the BAM files as well, which is the binary version of SAM files. After then you could remove the SAM files.
+This has produced a SAM file. We need to generate the BAM files as well, which is the binary version of SAM files. After then you could remove the SAM files because they are too big.
 
  ```
 samtools view -bh IFNb01.sam > IFNb01.bam
@@ -99,7 +99,7 @@ samtools index IFNb01_sorted.bam
 
 rm IFNb01.sam
 ```
-**Task**: What is the mapping rate of this sample? Is it high?
+**Task 3**: What is the mapping rate of this sample? Is it a high rate?
 
 ### 4.	Visualizing reads and transcript structures ### 
 After getting your provided aligned BAM files, you can visualize the location of the mapped transcripts using visulization software such as: **IGV**, **Tablet**, **Ugene**, etc.
@@ -146,7 +146,7 @@ Rscript /home4/VBG_data/RNASeq/edgeR.r
 
 Then you will get the output files: **DEG_edgeR.csv**, **cpm.csv** , **bcvplot.pdf**, **VolcanoPlot.png** and **mdsplot.pdf**. Check the output files and explore what they stand for.
 
-**Task**: After running edgeR code, please check the output files. How many DE genes we have? what is the cut-off of FDR P-value? What are the CPM values? How to explore the relationships among samples, and the top significant DE genes?
+**Task 4**: After running edgeR code, please check the output files. How many DE genes we have? what is the cut-off of FDR P-value? What are the CPM values? How to explore the relationships among samples, and the top significant DE genes?
 
 
 ### 6. Function annotation and pathway analysis ### 
@@ -158,7 +158,7 @@ We could also try **Reactome**
 (https://reactome.org/PathwayBrowser/#TOOL=AT), which is highly recommended. 
 The user guide of **Reactome** is here (https://reactome.org/userguide/analysis). You could copy and paste the significant DE genes ID list from **DEG_edgeR.csv** and run analysis. 
 
-**Task**: Try to find top 20 pathways of our significant DE genes. Is it a big difference between the results from DAVID and REACTOME?
+**Task 5**: Try to find top 20 pathways of our significant DE genes. Is it a big difference between the results from DAVID and REACTOME?
 
 Alternatively, you could directly run the **Reactome** R script I have written for you. 
 
@@ -168,13 +168,13 @@ Rscript /home4/VBG_data/RNASeq/Reactome.r hs gene.glist ./ 20
 ```
 Then you will get the output files: **gene.bubble.pdf**, **gene.SigReactome.xls**. The pdf file is the figure of the top 20 pathways enrichment of our significant DE genes. The xls file is the table of details of all the pathways (with P-value < 0.05) of our significant DE genes.  
 
-**Bonus1**:
+**Bonus 1**:
 Could you use any of visulization tools to visualize your aligned SAM/BAM file?
 
-**Bonus2**:
+**Bonus 2**:
 You have done trimming, references alignment and features count for the sample **IFNb01.fastq**, could you please also run same steps on five other samples? You could do it by command line, but we prefer to write it with a bash script (e.g. Loop, or Input arguments) to do it.
 
-**Bonus3**:
+**Bonus 3**:
 Based on the overall counts table. If we ONLY want to represent the up-regulated DEGs, how could we do it? Is it a big difference between the pathway results between All DEGs and up-regulated DEGs?
 
 
