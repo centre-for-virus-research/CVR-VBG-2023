@@ -109,7 +109,7 @@ Here we use **htseq** to get the mapped raw counts of each gene in each sample.
 ```
 
 htseq-count -s reverse IFNb01_sorted.bam  /home4/VBG_data/RNASeq/Homo_sapiens.GRCh38.107.gtf > countfile
-awk 'BEGIN{"wc -l < countfile" | getline b} {if(NR<=b-5) print}' countfile > IFNb01_count_htseq.txt
+head -n -5 countfile > IFNb01_count_htseq.txt
 rm countfile
 
 ```
