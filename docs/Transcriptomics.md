@@ -143,6 +143,7 @@ When R opens,
 ```
 BiocManager::install("edgeR")
 BiocManager::install("org.Hs.eg.db")
+BiocManager::install("EnhancedVolcano")
 ```
 say "yes"
 once installed, type 
