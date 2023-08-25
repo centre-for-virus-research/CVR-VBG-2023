@@ -41,14 +41,14 @@ Condition2 - Interferon treated samples: **IFNb01.fastq; IFNb02.fastq; IFNb03.fa
 Step 2: Generate a soft link to the files, here is an example for one file:
 
 ```
-ln -s /home4/VBG_data/RNASeq/IFNb01.fastq
+ln -s /home4/VBG_data/RNASeq/IFNb01.fastq .
 ```
 
 We need to make soft links to the reference genome file as well. I have downloaded the genome and GTF files. We could go to RefSeq, Ensembl or UCSC website to download the latest version of the human genome (GRCh38/hg38).
 
 ```
-ln -s /home4/VBG_data/RNASeq/Human
-ln -s /home4/VBG_data/RNASeq/Homo_sapiens.GRCh38.107.gtf
+ln -s /home4/VBG_data/RNASeq/Human .
+ln -s /home4/VBG_data/RNASeq/Homo_sapiens.GRCh38.107.gtf .
 ```
 
 **Task 1**: Check the human reference genome (GRCh38) and its annotation files, and print the last 50 lines of these files. 
