@@ -108,18 +108,15 @@ After getting your provided aligned BAM files, you can visualize the location of
 In this workshop, we will use **edgeR** for the differential expression(DE). Here, we omit the step of transcriptome assembly as we don’t want to discover novel DE genes from those in our current genome.
 There are two well-known tools which can count the mapped transcripts in the genome. To learn more about how **featureCounts** and **htseq** compare, I have written a blog about it http://bioinformatics.cvr.ac.uk/blog/featurecounts-or-htseq-count/
 
-Here we use **featureCounts** to get the mapped raw counts of each gene in each sample.
+Here we use **htseq** to get the mapped raw counts of each gene in each sample.
 
 ```
-featureCounts -s 2 -a /home4/VBG_data/RNASeq/Homo_sapiens.GRCh38.107.gtf -o temp.txt IFNb01_sorted.bam
-
-cat temp.txt| cut -f 2,3,4,5,6 --complement|sed 's/\t/ /g'|awk 'NR==2;NR>2{print $0|"sort -n"}' > IFNb01_count.txt
-
-rm temp.txt
 
 htseq-count -s reverse ${file}_sorted.bam  /home4/VBG_data/RNASeq/Homo_sapiens.GRCh38.107.gtf > countfile
 
 awk 'BEGIN{"wc -l < countfile" | getline b} {if(NR<=b-5) print}' countfile > ${file}_count_htseq.txt
+
+rm countfile
 
 ```
 
@@ -178,7 +175,7 @@ Here we have some bonus questions:
 Could you use any of visulization tools (**IGV**, **Ugene**, **Tablet**, etc.) to visualize your aligned SAM/BAM file?
 
 **Bonus 2**:
-After reading my blog, do you think **htseq** could do a counts table as well? If yes, could you please write your own command for doing it? (The manual of HTSeq: https://htseq.readthedocs.io/en/release_0.11.1/count.html. Be aware of strand-specific settings!)
+As we know,  **featureCounts** could do a counts table as well. Could you please write your own command for doing it? (The manual: https://subread.sourceforge.net/featureCounts.html. Be aware of strand-specific settings!)
 
 **Bonus 3**:
 You have done trimming, references alignment, and features count for the sample **IFNb01.fastq**, could you please also run the same steps on five other samples? You could still do it by command line, but it is better to write it with a BASH script (e.g. by loop, or input arguments).
