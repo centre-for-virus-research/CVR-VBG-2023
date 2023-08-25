@@ -84,7 +84,6 @@ In this workshop, we will use **Hisat2** to map the reads to the reference genom
 
 ```
 genome='/home4/VBG_data/RNASeq/Human'
-
 hisat2 -x $genome --rna-strandness R -U IFNb01_trimmed.fq -S IFNb01.sam
 ```
 
