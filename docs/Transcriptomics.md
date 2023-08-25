@@ -173,6 +173,26 @@ The user guide of **Reactome** is here (https://reactome.org/userguide/analysis)
 
 Alternatively, you could directly run the **Reactome** R script I have written for you. 
 
+You can simply type this command line :
+
+```
+R
+```
+
+When R opens,
+```
+BiocManager::install("ReactomePA")
+install.packages("stringr", repos='http://cran.us.r-project.org')
+Install.packages("ggplot2")
+BiocManager::install("clusterProfiler")
+install.packages("tidyverse")
+
+```
+say "yes"
+once installed, type 
+```
+q()
+
 ```
 cat DEG_edgeR.csv|sed 's/"//g'| awk 'NR>1' | cut -f1 -d',' > gene.glist
 Rscript /home4/VBG_data/RNASeq/Reactome.r hs gene.glist ./ 20
