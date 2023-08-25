@@ -136,6 +136,21 @@ Here we use the classical mode of differential expression (DE) analysis in **edg
 You can simply type this command line :
 
 ```
+R
+```
+
+When R opens,
+```
+BiocManager::install("edgeR")
+```
+say "yes"
+once installed, type 
+```
+q()
+```
+
+then type then following in terminal
+```
 Rscript /home4/VBG_data/RNASeq/edgeR.r
 ```
 
