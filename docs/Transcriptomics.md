@@ -117,6 +117,10 @@ cat temp.txt| cut -f 2,3,4,5,6 --complement|sed 's/\t/ /g'|awk 'NR==2;NR>2{print
 
 rm temp.txt
 
+htseq-count -s reverse ${file}_sorted.bam  /home4/VBG_data/RNASeq/Homo_sapiens.GRCh38.107.gtf > countfile
+
+awk 'BEGIN{"wc -l < countfile" | getline b} {if(NR<=b-5) print}' countfile > ${file}_count_htseq.txt
+
 ```
 
 In this course, we don't have enough time to make the count table for all the samples. by ourselves. However, we can use the overall count table that I have prepared for you, which is based on the real data.
