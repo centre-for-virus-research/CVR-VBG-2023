@@ -194,6 +194,9 @@ once installed, type
 q()
 
 ```
+Then please run these code in your terminal:
+
+```
 cat DEG_edgeR.csv|sed 's/"//g'| awk 'NR>1' | cut -f1 -d',' > gene.glist
 Rscript /home4/VBG_data/RNASeq/Reactome.r hs gene.glist ./ 20
 ```
