@@ -158,7 +158,7 @@ We could also try **Reactome**
 (https://reactome.org), which is highly recommended. 
 The user guide of **Reactome** is here (https://reactome.org/userguide/analysis). You could copy and paste the significant DE genes ID list from **DEG_edgeR.csv** and run analysis. 
 
-**Task 5**: Try to find the top 20 pathways of our significant DE genes. Is there a big difference between the results from DAVID and REACTOME?
+**Task 5**: Try to find the top 20 pathways of our significant DE genes list.
 
 Alternatively, you could directly run the **Reactome** R script I have written for you. 
 
