@@ -92,11 +92,8 @@ This has produced a SAM file. We need to generate the BAM files as well, which i
 
  ```
 samtools view -bh IFNb01.sam > IFNb01.bam
-
 samtools sort -o IFNb01_sorted.bam IFNb01.bam
-
 samtools index IFNb01_sorted.bam
-
 rm IFNb01.sam
 ```
 **Task 3**: What is the mapping rate against the human genome of this sample? Is it a high rate?
@@ -113,9 +110,7 @@ Here we use **htseq** to get the mapped raw counts of each gene in each sample.
 ```
 
 htseq-count -s reverse IFNb01_sorted.bam  /home4/VBG_data/RNASeq/Homo_sapiens.GRCh38.107.gtf > countfile
-
 awk 'BEGIN{"wc -l < countfile" | getline b} {if(NR<=b-5) print}' countfile > IFNb01_count_htseq.txt
-
 rm countfile
 
 ```
