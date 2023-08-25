@@ -142,6 +142,7 @@ R
 When R opens,
 ```
 BiocManager::install("edgeR")
+BiocManager::install("org.Hs.eg.db")
 ```
 say "yes"
 once installed, type 
