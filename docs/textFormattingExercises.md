@@ -95,3 +95,46 @@ done < $1
 echo $name
 echo $genome|rev|tr '[ATGC]' '[TACG]'|fold -w 70
 ```
+
+### Script for reference mapping and consensus generation 
+
+```
+#!/usr/bin/bash
+
+# bash script to map all the read files against all the reference sequences.
+# It convets bam to consensus sequence also, generates mapping statistics
+
+# This script assumes
+#	1. Reads are sequences by Illumina
+#	2. Reads are paired-end
+#	3. All the reads are stored in "FQs" directory and have ".fastq.gz" extension
+#	4. All the references are stored in Ref directory and have ".fa" extension 
+#	
+#	Written by: Sreenu Vattipally
+#
+
+for fq in FQs/*_1.fastq.gz
+do 
+	# This have to be adjusted as per the file name
+	name=$(basename -s "_1.fastq.gz" $fq); 
+
+	# Trim the reads using trim_galore program
+	trim_galore --paired --illumina --length 75 -q 30 FQs/${name}_1.fastq.gz FQs/${name}_2.fastq.gz
+
+	# Scan all the ref sequences
+	for ref in Ref/*.fa
+	do
+		refName=$(basename -s ".fa" $ref); 
+		# Map the reads and take only mapped reads. Index the reference sequences for the first time
+		#bwa index $ref
+		bwa mem -t 4 $ref ${name}_1_val_1.fq.gz ${name}_2_val_2.fq.gz|samtools view -F4 -bS |samtools sort -o $name-$refName.bam
+
+		# Create consensus
+		samtools consensus $name-$refName.bam -o $name-$refName-consensus.fa
+
+		# Get alignment stats
+		samtools coverage $name-$refName.bam -o $name-$refName-stats.txt
+	done
+done
+```
+
